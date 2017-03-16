@@ -1,0 +1,53 @@
+<!--
+  @desc presents "La Fabrique" through a virtual tour
+  @author Hugo G on 07/12/2016
+  Guilherme and Oceane on 10/01/17
+  Leons and Yasmina on 15/01/2017
+  @required __
+-->
+<ion-view ng-init="initTour()">
+
+  <ion-content scroll="false">
+    <div class="fill-space" id="menu-container">
+
+      <!--div class="top-right fill-space" id="over-div"></div-->
+
+      <div class="virtualTour-tab top-left cut-corner cut-corner-bottom-right" id="presentationVT-tab">
+         <span class="virtualTour-tab-span" id="presentation-spanVT"> Presentation </span>
+      </div>
+
+      <div class="virtualTour-tab top-right cut-corner cut-corner-bottom-left" id="referencesVT-tab">
+         <span class="virtualTour-tab-span" id="references-spanVT"> References </span>
+      </div>
+
+      <div class="virtualTour-tab bottom-left cut-corner cut-corner-top-right" id="offersVT-tab">
+         <span class="virtualTour-tab-span" id="offers-spanVT"> Offers </span>
+      </div>
+
+      <div class="virtualTour-tab bottom-right cut-corner cut-corner-top-left" id="agendaVT-tab">
+         <span class="virtualTour-tab-span" id="agenda-spanVT"> Agenda </span>
+      </div>
+
+      <img src="img/la-fabrique.png" alt="Image not found" class="background-image"/>
+
+    </div>
+    <script type="text/javascript" src="js/virtualTour.js"></script>
+
+    <!-- panorama -->
+    <div id="panorama"></div>
+    <!-- /end panorama -->
+    <!-- HTML content for hotspots in virtualTour.js-->
+    <div class="selectors" style="display:none;">
+    	<div id="titleScene">"Yoko Tsuno"</div>
+      <div id="popover1">
+        <img src="img/capgeminiPique.png" alt="logo Capgemini" height="25%" width="100%"/>
+      </div>
+    </div>
+    <!-- /end selectors -->
+
+
+
+
+
+  </ion-content>
+</ion-view>

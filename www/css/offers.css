@@ -1,0 +1,66 @@
+/* @author Hugo on 11/01/2017
+*/
+.offers {
+	background-color: #f0f0f0;
+    background-size: 100% 100%;
+    font-family: 'HelveticaNeueLT', serif;
+}
+
+.offer-header {
+	margin-top: 0%;
+	width: 100%;
+	margin-bottom: 0%;
+}
+
+.offer-header h1{
+    font-family: 'HelveticaNeueLT', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3em;
+    color: #275466;
+    margin-right:5%;
+    margin-left: 5%;
+    text-align: center;
+    border-bottom: 1px solid #aab4b9;
+}
+
+
+.offer-cover-image{
+	margin-top: 0%;
+	height: 89%;
+	margin:auto;
+	display:block;
+}
+
+.ideation{
+	width: 18%;
+	height:30%;
+	position:absolute;
+	top: 40%;
+	left:5%;
+}
+
+.visualisation{
+	width: 20%;
+	height:30%;
+	position:absolute;
+	top: 18%;
+	left:41%;
+}
+
+.fabrication{
+	width: 20%;
+	height:30%;
+	position:absolute;
+	top: 40%;
+	right:3%;
+}
+
+.fullride{
+
+	width: 20%;
+	height:30%;
+	position:absolute;
+	bottom:8%;
+	left:41%;
+}

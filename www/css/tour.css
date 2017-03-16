@@ -1,0 +1,34 @@
+/* @author Oceane on 11/01/2017
+*/
+.virtualTour-tab {
+  position: absolute;
+  width : 20%;
+  height : 20%;
+  z-index: 24;
+}
+.virtualTour-tab:before, .virtualTour-tab:after {
+  background-color: #F0F0F0;
+}
+.virtualTour-tab-span{
+  font-family: 'HelveticaNeueLT', serif;
+  color : #275466;
+  font-size: 1.4em;
+  position: absolute;
+}
+
+#presentation-spanVT {
+  top : 20%;
+  left : 10%;
+}
+#references-spanVT{
+  top : 20%;
+  right : 10%;
+}
+#offers-spanVT{
+  bottom : 20%;
+  left : 15%;
+}
+#agenda-spanVT{
+  bottom : 20%;
+  right : 15%;
+}

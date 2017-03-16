@@ -1,0 +1,35 @@
+
+<!--
+  @desc Welcome page of the app, allow the user to access to offers, references, agnda, virtuual tour, contacts, presentation
+  @author Hugo G on 07/12/2016
+  @required __
+-->
+
+<ion-view ng-init="initMenu()">
+
+
+  <ion-content scroll="false">
+    <div class="fill-space" id="menu-container">
+
+      <div class="menu-tab top-left cut-corner cut-corner-bottom-right" id="presentation-tab">
+         <span class="menu-tab-span" id="presentation-span" on-click="goToPage('presentation')"> Presentation </span>
+      </div>
+
+      <div class="menu-tab top-right cut-corner cut-corner-bottom-left" id="references-tab">
+         <span class="menu-tab-span" id="references-span"> References </span>
+      </div>
+
+      <div class="menu-tab bottom-left cut-corner cut-corner-top-right" id="offers-tab">
+         <span class="menu-tab-span" id="offers-span"> Offers </span>
+      </div>
+
+      <div class="menu-tab bottom-right cut-corner cut-corner-top-left" id="agenda-tab">
+         <span class="menu-tab-span" id="agenda-span"> Agenda </span>
+      </div>
+
+      <img src="img/la-fabrique.png" alt="Image not found" class="background-image blurred"/>
+
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,70 @@
+<!--
+  @desc show the details of a reference
+  @author Hugo G on 07/12/2016
+  @required __
+-->
+
+<ion-view>
+  <ion-content >
+    <!-- We do an ng repeat to select the attributes in the array of references in app.js-->
+    <div id="refContent" ng-repeat="reference in references" ng-show = "reference.selected"> <!-- Show only the reference selected on the coverflow-->
+      <div id="entete">
+        <div id="title_subtitle">
+          <div class="ReferenceName" ng-show="reference.name">{{reference.name}}
+          </div>
+          
+          <div class="ReferenceSubtitle" ng-show="reference.subtitle">
+          <i class = "ion-paper-airplane"></i> &nbsp;{{reference.subtitle}}
+          </div>
+        </div>
+
+        <div class="Logo_space">
+          <img class="ReferenceLogo" ng-src="{{reference.logoUrl}}" ng-show="reference.logoUrl" alt="Logo" />
+        </div>
+      </div>
+
+      <div id="MilieuContent">
+
+        <div class="image_ref_space">
+          <img class="ReferenceImage" ng-src="{{reference.imgUrl}}" ng-show="reference.imgUrl" alt="Image" >  
+        </div>      
+
+        <div id="bullet_space">
+          <div id="bullet_square">
+
+            <div id="logo_idea">
+
+              <img class="logo_idee" src="img/iconeOK.png"/>
+              <span class="info_ref_image"> Information  </span>
+            </div>
+
+
+            <ul class="ReferenceBullet">
+                <li ng-repeat="bullet in reference.bulletPoints">
+                 {{bullet}} <br/>
+                </li>
+            </ul>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="ReferenceNumbers"> 
+        <div class="numbers" ng-repeat="number in reference.numbers">
+          {{number}}
+        </div>
+
+      </div>
+
+
+    </div>
+
+      <!--video id="ReferenceVideo" controls ng-show="reference.video">
+        <source ng-src="{{reference.video}}" type="video/mp4" />
+      </video-->
+
+  </ion-content>
+</ion-view>

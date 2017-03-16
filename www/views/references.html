@@ -1,0 +1,44 @@
+<!--
+  @desc shows all the references
+  @author Hugo G on 07/12/2016
+  @required __
+-->
+
+<ion-view>
+  <ion-content scroll="false" class="references">
+    <header class="reference-header" ng-controller="referencesCtrl">
+      <h1> References </h1>
+      <!--item where we choose the reference we want to go, confirmation with the button Go to-->
+      <span id="refList" class="custom-dropdown custom-dropdown--large custom-dropdown--white">
+        <select id="mySelect" class="custom-dropdown__select custom-dropdown__select--white" onclick=goToDetail() onchange=goToDetail()>
+          <option>
+            Select a reference
+          </option>
+          <option ng-repeat="reference in references">
+            {{reference.customer}}
+          </option>
+        </select>
+      </span>
+    </header>
+
+    <div id="coverflow">
+
+      <!--  For each reference created in refCtrl, it displays the name and logo of the customer-->
+      <div class="reference-cover" ng-repeat="reference in references" >
+        <!-- Link to go to the refDetail page in the controller when the current cover is selected-->
+        <img ng-src="{{reference.logoUrl}}" class='reference-cover-image'/>
+      </div>
+    </div>
+
+    <div id="reference-name">
+
+      <!-- client name for the selected reference, automatically updates-->
+      {{references[coverData.coverIndex].name}}
+    </div>
+
+    <div id="reference-details">
+      <p>{{references[coverData.coverIndex].subtitle}}</p>
+    </div>
+
+  </ion-content>
+</ion-view>

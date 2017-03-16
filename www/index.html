@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- virtual tour css-->
+    <link rel="stylesheet" type="text/css" href="lib/ipanorama/src/ipanorama.css">
+    <link rel="stylesheet" type="text/css" href="lib/ipanorama/src/ipanorama.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/effect.css">
+   <link rel="stylesheet" type="text/css" href="css/panorama.css">
+
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- jquery and jquery plugins-->
+    <script src="lib/jquery/jquery-3.1.1.js"></script>
+    <script src="lib/jquery.svg/jquery.svg.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- virtual tour plugins-->
+    <script type="text/javascript" src="lib/ipanorama/src/three.min.js"></script>
+    <script type="text/javascript" src="lib/ipanorama/src/jquery.ipanorama.js"></script>
+
+    <!-- coverflow plugin -->
+    <script src="lib/jquery-ui/jquery-ui.js"></script>
+    <script src="lib/coverflow/jquery.touchSwipe.min.js"> </script>
+    <script src="lib/coverflow/jquery.coverflow.js"> </script>
+
+
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <script src="lib/ionic-native-transitions/dist/ionic-native-transitions.min.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <link href="css/menu.css" rel="stylesheet">
+    <script src="js/controllers/menuCtrl.js"></script>
+
+    <!--the controller for the menu on the fixed bar -->
+    <script src="js/controllers/barmenuCtrl.js"></script>
+
+
+      <!--second controller for the virtual tour -->
+    <link href="css/tour.css" rel="stylesheet">
+    <script src="js/controllers/tourCtrl.js"></script>
+
+    <script src="js/controllers/refCtrl.js"></script>
+    <link href="css/references.css" rel="stylesheet"/>
+
+    <link href="css/refDetail.css" rel="stylesheet"/>
+    <!--the controller for the references in the side menu -->
+    <script src="js/controllers/referencesCtrl.js"></script>
+
+    <script src="js/controllers/offersCtrl.js"></script>
+    <link href="css/offers.css" rel="stylesheet"/>
+    <link href="css/contacts.css" rel="stylesheet"/>
+    <!-- script and styles for the agenda-->
+    <!-- jquery, moment, and angular have to get included before fullcalendar -->
+    <script type="text/javascript" src="lib/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="lib/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="lib/fullcalendar/dist/gcal.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-calendar/src/calendar.js"></script>
+    <link rel="stylesheet" href="lib/fullcalendar/dist/fullcalendar.css"/>
+    <script src="js/controllers/agendaCtrl.js"></script>
+
+  </head>
+
+  <body ng-app="starter" ng-controller ='startCtrl'> <!-- Start the ng module and the controller from app.js -->
+
+    <ion-side-menus enable-menu-with-back-views="true">
+      <ion-side-menu-content>
+        <ion-nav-bar align-title="center">
+          <!-- Enable backButton included in ionic's framework, MUST be in an "ion-nav-bar"-->
+          <ion-nav-back-button>
+            <i class="ion-chevron-left"></i>
+          </ion-nav-back-button>
+
+
+          <ion-nav-buttons side="left">
+           <!-- Toggle left side menu -->
+           <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+          </ion-nav-buttons>
+
+          <ion-nav-title>
+            <!--link to the main Menu-->
+            <a href="#/menu" class="spikeCapgemini">
+              <img src="img/capgeminiPique.png" class="spikeCapgemini" alt="Spike from the Capgemini Logo">
+            </a>
+            <a href="#/menu">
+              <img src="img/logoFabrique.png" class="logoFabrique" alt="Logo LaFabrique">
+            </a>
+          </ion-nav-title>
+          <!--Link to contact page-->
+          <ion-nav-buttons side="right">
+            <a href="#/contacts">
+              <button class="button">
+                <i class = "ion-person"></i>
+                <span id="contact"> Contacts</span>
+              </button>
+            </a>
+          </ion-nav-buttons>
+
+          </ion-nav-bar>
+        <ion-nav-view class="fill-space" animation="no-animation"></ion-nav-view>
+      </ion-side-menu-content>
+      <!--Definition of the side-menu, on the left-->
+      <ion-side-menu side="left" ng-controller="referencesCtrl">
+        <ion-header-bar>
+          <h1 class="title">La Fabrique</h1>
+        </ion-header-bar>
+        <ion-content>
+          <ion-list>
+            <ion-item menu-close onclick="window.location='#/presentation';">
+              Presentation
+            </ion-item>
+            <ion-item menu-close onclick="window.location='#/contacts';">
+              Contacts
+            </ion-item>
+            <ion-item menu-close onclick="window.location='#/virtualTour';">
+              Virtual Tour
+            </ion-item>
+            <ion-item menu-close onclick="window.location='#/agenda';">
+              Agenda
+            </ion-item>
+            <ion-item menu-close onclick="window.location='#/offers';">
+              Offers
+            </ion-item>
+            <ion-item menu-close onclick="window.location='#/references';">
+              References
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+    </ion-side-menus>
+  </body>
+  </html>

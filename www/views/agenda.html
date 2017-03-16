@@ -1,0 +1,15 @@
+<!--
+  @desc Agenda overview page
+  @author Hugo G on 07/12/2016
+  @required __
+-->
+
+<ion-view>
+
+  <ion-content scroll="false" class=page_agenda ng-controller="agendaCtrl">
+<!-- agenda page with the controller and the plug-in -->
+
+    <h1 class=agenda> Agenda </h1>
+    <div ui-calendar="uiConfig.calendar" class=calendar ng-model="eventSources"></div>
+  </ion-content>
+</ion-view>

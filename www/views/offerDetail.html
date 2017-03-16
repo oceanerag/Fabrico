@@ -1,0 +1,17 @@
+<!--
+  @desc contains all the detail of an offer
+  @author Hugo G on 07/12/2016
+  @required __
+-->
+
+<ion-view>
+  <ion-content>
+
+    <h1> Detailed offer </h1>
+
+      <div ng-repeat="offer in offers" ng-show = "offer.selected == true"> <!-- Show only the reference selected on the coverflow-->
+        <p>{{offer.name}}</p>
+      </div>
+
+  </ion-content>
+</ion-view>

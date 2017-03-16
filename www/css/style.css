@@ -1,0 +1,122 @@
+
+@font-face{
+  font-family : 'HelveticaNeueLT';
+  src : url('../fonts/HelveticaNeueLTStd Lt.otf') format('opentype'),
+        url('../fonts/HelveticaNeueLTStd Lt.woff') format('woff');
+}
+/* This code puts the font in all the text in the application */
+.ion-view{
+  font-family: 'HelveticaNeueLT', 'serif';
+}
+.ion-person{
+  font-size: 18px;
+  color: #008DC8;
+}
+.ion-arrow-right-c{
+  font-size: 18px;
+  color: #008DC8;
+}
+.logoFabrique{
+    max-height: 60%;
+    max-width: 60%;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+ .spikeCapgemini{
+   max-height: 40%;
+   max-width: 40%;
+   overflow: visible;
+   padding-top: 0;
+   padding-bottom: 0;
+   text-decoration: none;
+ }
+#contact{
+  font-weight: bold;
+}
+
+/*<!--
+  @desc CSS application
+  @author [Manon R] on  [04/01/2017]
+-->
+* @edit [CSS presentation page]
+*/
+
+.presentation {
+    background-color: #f0f0f0;
+    background-size: 100% 100%;
+    font-family: 'HelveticaNeueLT', serif;
+}
+
+header{
+	margin-top: 2%;
+	width: 100%;
+	margin-bottom: 0%;
+
+}
+
+
+
+header h1{
+    font-family: 'HelveticaNeueLT', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #275466;
+    margin-left: 5%;
+    background.color : red;
+}
+
+#video_presentation{
+	display:block;
+	margin:auto;
+  height: 50%;
+  weight: 50%;
+}
+video{
+	width : 100%;
+	height :100%;
+}
+
+#presentation_text{
+	background-color: #0b3140;
+	border-width: 0.1px;
+	border-color: #0b3140;
+	border-style: solid;
+	margin-top: 2%;
+	margin-right: 5%;
+	margin-left: 5%;
+	text-align: justify;
+	color: #ffffff;
+	box-shadow: 5px 5px 5px #aab4b9;
+}
+
+
+#video_text{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+/* css for the Agenda title */
+.agenda {
+  background-color: #0b3140;
+  background-size: 100% 100%;
+  font-family: 'HelveticaNeueLT', serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.calendar  {
+  margin-top: 0%;
+  margin-left: 2%;
+  margin-right: 2%
+  margin-bottom: 0%;
+  overflow: hidden;
+
+}
+
+.page_agenda {
+ background-color: #f0f0f0;
+
+}
