@@ -1,4 +1,4 @@
-/* Page for list of references in the side menu
+/* Page for list of references in the references page
 author: Oceane
 */
 angular.module('starter')
