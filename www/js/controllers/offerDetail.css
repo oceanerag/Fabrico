@@ -1,0 +1,146 @@
+/*
+  @desc show the details of all offers for a theme
+  @author Camille on 08/03/2017
+  @required __
+-->*/
+
+#offerContent{
+
+  display: flex;
+  flex-direction: column;
+  font-family: 'HelveticaNeueLT' , serif;
+  justify-content: space-between;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+#headerOffer{
+  height:10%;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+  border-bottom: 1px solid #aab4b9;
+  color: #275466;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.themeTitle{
+  margin-left: 0%;
+}
+.divImage{
+height: 110%;
+width: 7%;
+padding-bottom: 2%;
+}
+
+.themeImage{
+height: 100%;
+}
+
+#allCard{
+  height:70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#card{
+  width: 23%;
+  height:90%;
+  background-color: white;
+  box-shadow: 10px 15px 30px #275466;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.divOfferName{
+  height: 20%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.7em;
+  line-height: 1.5;
+  background-color: #40b8e1;
+  color: white;
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+  display: flex;
+
+}
+
+.offerName{
+  margin : auto;
+}
+
+.divOfferDescription{
+  text-align: justify;
+  text-indent: 1.2em;
+  height: 50%;
+  font-size: 1.1em;
+  line-height: 1.4;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow: hidden;
+  text-overflow:"...";
+  display: flex;
+}
+
+.offerDescription{
+  margin : auto;
+}
+
+.price{
+  background-color: #e8e8e8;
+  height: 10%;
+  color: black;
+  text-align: center;
+  font-size: 1.3em;
+  padding-top: 5%;
+}
+
+.divOfferDispositif{
+  height: 20%;
+  border-bottom: 1px solid #aab4b9;
+  color: #275466;
+  font-size: 1.3em;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  margin-right: 5%;
+  margin-left: 5%;
+
+}
+
+.offerDispositif{
+  margin: auto;
+  width: 80%;
+
+}
+
+.ion-clipboard{
+  padding-right: 0%;
+  font-size : 30px;
+  margin : auto;
+}
+
+.ion-social-euro{
+  font-size : 17px;
+}
+
+.Devis{
+  background-color: #0b3140;
+  height:15%;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  padding-top: 3%;
+
+}

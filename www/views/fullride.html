@@ -1,5 +1,39 @@
 <ion-view>
-  <ion-content>
-    <h1> Full Ride </h1>
+  <ion-content class="fullride" scroll="false">
+
+    <header class="fullride-header" ng-controller="referencesCtrl">
+      <h1> Full Ride </h1>
+      <!--item where we choose the offer we want to go, confirmation with the button Go to-->
+      <span id="refList" class="custom-dropdown custom-dropdown--large custom-dropdown--white">
+        <select id="mySelect" class="custom-dropdown__select custom-dropdown__select--white" onclick=goToDetail() onchange=goToDetail()>
+          <option>
+            Select a reference
+          </option>
+          <option ng-repeat="reference in references">
+            {{reference.customer}}
+          </option>
+        </select>
+      </span>
+    </header>
+
+    <div id="coverflow2">
+
+      <!--  For each reference created in refCtrl, it displays the name and logo of the customer-->
+      <div class="fullride-cover" ng-repeat="reference in references" >
+        <!-- Link to go to the refDetail page in the controller when the current cover is selected-->
+        <img ng-src="{{reference.logoUrl}}" class='offer-cover-image'/>
+      </div>
+    </div>
+
+    <div id="fullride-name">
+
+      <!-- client name for the selected reference, automatically updates-->
+      {{references[coverData.coverIndex].name}}
+    </div>
+
+    <div id="full-ride-details">
+      <p>{{references[coverData.coverIndex].subtitle}}</p>
+    </div>
+
   </ion-content>
 </ion-view>

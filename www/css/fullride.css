@@ -1,0 +1,84 @@
+/* @author Hugo on 11/01/2017
+*/
+.fullride {
+	background-color: #f0f0f0;
+    background-size: 100% 100%;
+    font-family: 'HelveticaNeueLT', serif;
+}
+
+.fullride-header {
+	margin-top: 1%;
+	width: 100%;
+	margin-bottom: 3%;
+}
+
+.fullride-header h1{
+    font-family: 'HelveticaNeueLT', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3em;
+    color: #275466;
+    margin-right:5%;
+    margin-left: 5%;
+    text-align: center;
+    border-bottom: 1px solid #aab4b9;
+}
+
+
+.fullride-cover {
+	width: 45%;
+	height: 50%;
+    background-color: white;
+
+    border-width: 1px;
+	border-color: #0b3140;
+	border-style: solid;
+
+    -webkit-box-shadow: 0px 13px 41px 13px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 13px 41px 13px rgba(0,0,0,0.37);
+	box-shadow: 0px 13px 41px 13px rgba(0,0,0,0.37);
+}
+
+
+
+#fullride-name {
+	margin-top: 5%;
+	font-family: 'HelveticaNeueLT', serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #275466;
+    text-align: center;
+}
+
+#fullride-details {
+	background-color: #0b3140;
+	border-width: 0.1px;
+	border-color: #0b3140;
+	border-style: solid;
+
+	margin-top: 4%;
+	margin-right: 0%;
+	margin-left: 0%;
+	height: 100%;
+	padding-top: 3% ;
+	padding-bottom: 2%;
+	padding-right: 10% ;
+	padding-left: 10%;
+	font-family: 'HelveticaNeueLT', serif;
+    font-size: 2em;
+    line-height: 1.5;
+	text-align: center;
+	color: #ffffff;
+	box-shadow: 5px 5px 5px #aab4b9;
+}
+
+#offersList {
+	position: absolute;
+	width: 25%;
+	height: 7%;
+	right: 3%;
+	top:1%;
+	background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
