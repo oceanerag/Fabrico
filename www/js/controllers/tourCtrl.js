@@ -57,7 +57,7 @@ angular.module('starter')
           height: $(pageSelector).parent().height()*2,
           fontSize : '3em'
         }, {
-          duration : 1000,
+          duration : 400,
           queue : false
         });
 
@@ -68,14 +68,14 @@ angular.module('starter')
           width: $(pageSelector).parent().width()*0.2,
           height: $(pageSelector).parent().height()*0.2,
         }, {
-          duration : 500,
+          duration : 400,
           queue : false
         });
 
         //change page after the animation
         setTimeout(function(){
           $state.go(page);
-        }, 1000);
+        }, 500);
 
         //give back their size to the triangles (permits to recover the virtual Tour as it was)
        setTimeout(function(){
@@ -86,7 +86,7 @@ angular.module('starter')
           fontSize: '1.4em',
           zIndex: '25'
         })
-      }, 2000);
+      }, 1000);
 
     })
   };
