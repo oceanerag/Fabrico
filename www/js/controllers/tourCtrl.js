@@ -6,7 +6,7 @@
 
 angular.module('starter')
 
-.controller('tourCtrl', function($scope, $state, $ionicHistory){
+.controller('tourCtrl', function($scope, $state){
 
   //initialize the triangles
   $scope.initTour = function($scope){
@@ -90,5 +90,7 @@ angular.module('starter')
 
     })
   };
+
+  $scope.goToPage = goToPage;
 
 });
