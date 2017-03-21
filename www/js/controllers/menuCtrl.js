@@ -6,7 +6,7 @@
 
 angular.module('starter')
 
-.controller('menuCtrl', function($scope, $state, $rootScope, $ionicHistory, $ionicSideMenuDelegate){
+.controller('menuCtrl', function($scope, $state){
 
   //initialize the triangles
   $scope.initMenu = function($scope){
