@@ -123,24 +123,9 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     templateUrl:'views/refPopup.html'
   })
 
-  .state('fabrication',{
-    url:'/fabrication',
-    templateUrl:'views/fabrication.html'
-  })
-
   .state('fullride',{
     url:'/fullride',
     templateUrl:'views/fullride.html'
-  })
-
-  .state('ideation',{
-    url:'/ideation',
-    templateUrl:'views/ideation.html'
-  })
-
-  .state('visualisation',{
-    url:'/visualisation',
-    templateUrl:'views/visualisation.html'
   })
 
   ;
