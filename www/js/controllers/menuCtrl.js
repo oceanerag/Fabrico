@@ -6,7 +6,7 @@
 
 angular.module('starter')
 
-.controller('menuCtrl', function($scope, $state, $ionicHistory, $ionicSideMenuDelegate){
+.controller('menuCtrl', function($scope, $state, $rootScope, $ionicHistory, $ionicSideMenuDelegate){
 
   //initialize the triangles
   $scope.initMenu = function($scope){
@@ -106,9 +106,7 @@ angular.module('starter')
     })
   };
 
-  $scope.toggleLeftSideMenu = function() {
-    	$ionicSideMenuDelegate.toggleLeft();
+  $scope.goToPage = goToPage;
 
-  };
 
 });
