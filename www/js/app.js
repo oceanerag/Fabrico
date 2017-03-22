@@ -146,6 +146,7 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
 
 // store all the refences and their content. These references are available from every page of the application
 .controller('startCtrl',function($rootScope){
+
   $rootScope.references= [{
     name : 'Portail B2B',
     customer : 'Somfy',

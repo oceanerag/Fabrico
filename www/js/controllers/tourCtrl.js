@@ -6,7 +6,23 @@
 
 angular.module('starter')
 
-.controller('tourCtrl', function($scope, $state){
+.controller('tourCtrl', function($scope, $state, $rootScope){
+
+  // disables swipe for side menu when enterring state
+
+  $scope.$on("$ionicView.beforeEnter", function(event, data){
+    $rootScope.toggleDrag = false;
+
+    console.log("ouverture");
+  });
+
+  // enables swipe for side menu when leaving state
+
+  $scope.$on("$ionicView.afterLeave", function(event, data){
+    $rootScope.toggleDrag = true;
+    console.log("sortie");
+  });
+
 
   // functions for navigation towards other parts of the app
 
