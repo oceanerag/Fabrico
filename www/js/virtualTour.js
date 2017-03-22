@@ -11,7 +11,7 @@
 		//This is where you declare the differents options of your virtual tour
 		var panorama = $("#panorama").ipanorama({
 			theme: "ipnrm-theme-default",
-			hotSpotSetup: true, 	//Set this setup at true to display pitch and yawn into the browser console
+			hotSpotSetup: false, 	//Set this setup at true to display pitch and yawn into the browser console
 			onHotSpotSetup: function(yaw, pitch, cameraYaw, cameraPitch, cameraZoom) {
 				console.log("yaw: " + yaw + ", pitch: " + pitch + ", cameraYaw: " + cameraYaw + ", cameraPitch: " + cameraPitch + ", cameraZoom: " + cameraZoom);
 			},
@@ -20,7 +20,7 @@
 			showControlsOnHover: false,
 			showSceneThumbsCtrl: false,
 			showSceneMenuCtrl: false, /**menu icon to preview different scenes*/
-			showSceneNextPrevCtrl: false, /**right/left arrows next/previous scenes*/
+			showSceneNextPrevCtrl: true, /**right/left arrows next/previous scenes*/
 			showZoomCtrl: false,
 			showShareCtrl: false,
 			showFullscreenCtrl: false,
@@ -47,22 +47,76 @@
 							popoverShow: true,
 							popoverPlacement: "top",
 							popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
-							popoverSelector: "#popover1", //this select the element you want to show 
+							popoverSelector: "#popover1", //this select the element you want to show
 						},
+						{
+							yaw: 300.52,
+							pitch: -18.81,
+							popoverShow: true,
+							popoverPlacement: "top",
+							popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
+							popoverSelector: "#popover2", //this select the element you want to show
+						},
+						{
+							yaw: 344.08,
+							pitch: -6.32,
+							popoverShow: true,
+							sceneId: "Middle",
+							popoverPlacement: "top",
+							popoverContent: "Avancer dans la viste vituelle",
+						}
+
 					],
 				},
-				next: {
+				Middle: {
 					type: "sphere", // specifies the scene type ("box", "sphere", "cylinder")
-					title: "Flash Gordon",
-					image: "img/Flahs1.jpg",
-					yaw: 118,
-					pitch: -28,
+					image: "img/Salle1_Milieu.jpg",
+					yaw: 105.85,
+					pitch: -5.95,
 					hotSpots: [
 						{
-							yaw: 122,
-							pitch: -19,
+							yaw: 116.45,
+							pitch: -1.34,
 							popoverShow: true,
-							popoverContent: "Ca travaille dur!",
+							popoverContent: "Groupe-seb",
+						},
+						{
+							yaw: 55.99,
+							pitch: 0.40,
+							popoverShow: true,
+							sceneId: "Right",
+							popoverPlacement: "top",
+							popoverContent: "Avancer dans la viste vituelle",
+						},
+						{
+							yaw: 180.82,
+							pitch: -6.28,
+							popoverShow: true,
+							sceneId: "main",
+							popoverPlacement: "top",
+							popoverContent: "Revenir en arrière",
+						}
+					],
+				},
+				Right: {
+					type: "sphere", // specifies the scene type ("box", "sphere", "cylinder")
+					image: "img/Salle1_Droite.jpg",
+					yaw: 65.56,
+					pitch: -13.21,
+					hotSpots: [
+						{
+							yaw: 39.04,
+							pitch: -13.69,
+							popoverShow: true,
+							popoverContent: "seche-environnement",
+						},
+						{
+							yaw: 177.48,
+							pitch: -2.30,
+							popoverShow: true,
+							sceneId: "Middle",
+							popoverPlacement: "top",
+							popoverContent: "Revenir en arrière",
 						}
 					],
 				},
