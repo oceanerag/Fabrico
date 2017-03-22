@@ -5,7 +5,7 @@
 */
 
 
-angular.module('starter')
+/*angular.module('starter')
 
 .controller('barMenuCtrl', function ($scope, $ionicSideMenuDelegate){
 
@@ -18,4 +18,4 @@ angular.module('starter')
 }
 
 
-});
+});*/
