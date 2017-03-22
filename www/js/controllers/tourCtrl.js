@@ -12,15 +12,12 @@ angular.module('starter')
 
   $scope.$on("$ionicView.beforeEnter", function(event, data){
     $rootScope.toggleDrag = false;
-
-    console.log("ouverture");
   });
 
   // enables swipe for side menu when leaving state
 
   $scope.$on("$ionicView.afterLeave", function(event, data){
     $rootScope.toggleDrag = true;
-    console.log("sortie");
   });
 
 

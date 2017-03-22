@@ -8,6 +8,19 @@ angular.module('starter')
 
 .controller('refCtrl', function($rootScope,$scope,$state){
 
+    // disables swipe for side menu when enterring state
+
+    $scope.$on("$ionicView.beforeEnter", function(event, data){
+      $rootScope.toggleDrag = false;
+    });
+
+    // enables swipe for side menu when leaving state
+
+    $scope.$on("$ionicView.afterLeave", function(event, data){
+      $rootScope.toggleDrag = true;
+    });
+
+
     // set the inital index for the coverflow
     var initialIndex = 2;
     $scope.coverData = {coverIndex : initialIndex};
