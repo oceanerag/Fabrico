@@ -5,7 +5,7 @@
 */
 
 
-	$(document).ready(function() {
+	/*$(document).ready(function() {
 		"use strict";
 
 		//This is where you declare the differents options of your virtual tour
@@ -20,8 +20,8 @@
 			showControlsOnHover: false,
 			showSceneThumbsCtrl: false,
 			showSceneMenuCtrl: false, /**menu icon to preview different scenes*/
-			showSceneNextPrevCtrl: false, /**right/left arrows next/previous scenes*/
-			showZoomCtrl: false,
+			/*showSceneNextPrevCtrl: false, /**right/left arrows next/previous scenes*/
+			/*showZoomCtrl: false,
 			showShareCtrl: false,
 			showFullscreenCtrl: false,
 			sceneNextPrevLoop: true,
@@ -92,4 +92,4 @@
 		$("#fullscreen").click(function() {
 			panorama.ipanorama("fullscreen");
 		});
-	});
+	});*/
