@@ -11,7 +11,7 @@
 		//This is where you declare the differents options of your virtual tour
 		var panorama = $("#panorama").ipanorama({
 			theme: "ipnrm-theme-default",
-			hotSpotSetup: false, 	//Set this setup at true to display pitch and yawn into the browser console
+			hotSpotSetup: true, 	//Set this setup at true to display pitch and yawn into the browser console
 			onHotSpotSetup: function(yaw, pitch, cameraYaw, cameraPitch, cameraZoom) {
 				console.log("yaw: " + yaw + ", pitch: " + pitch + ", cameraYaw: " + cameraYaw + ", cameraPitch: " + cameraPitch + ", cameraZoom: " + cameraZoom);
 			},
@@ -36,37 +36,18 @@
 			scenes: {
 				main: {
 					type: "sphere", // specifies the scene type ("box", "sphere", "cylinder")
-					//titleHtml:true,
-					titleSelector: "#titleScene",
-					//title: "Main Scene",
 					yaw: 0,
 					pitch: 0,
-					compassNorthOffset: 0,
-					image: "img/Yoko4.jpg",
+					image: "img/Salle1_Gauche.JPG",
 					//hotSpots definition
 					hotSpots: [
 						{
-							yaw: 297,
-							pitch: -20,
-							sceneId: "next", //Link beetween scenes
-							popoverShow: true, //set to true if you wan to display your popup on default
-							popoverPlacement: "top",
-							popoverContent: "Pour aller vers la salle suivante",
-						},
-						{
-							yaw: 319,
-							pitch: -14,
+							yaw: 51.64,
+							pitch: -11.70,
 							popoverShow: true,
 							popoverPlacement: "top",
-							popoverContent: "Un tableau",
-						},
-						{
-							yaw: 45,
-							pitch: -17,
-							popoverShow: false,
-							popoverPlacement: "top",
 							popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
-							popoverSelector: "#popover1",
+							popoverSelector: "#popover1", //this select the element you want to show 
 						},
 					],
 				},
