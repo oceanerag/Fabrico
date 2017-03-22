@@ -123,24 +123,9 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     templateUrl:'views/refPopup.html'
   })
 
-  .state('fabrication',{
-    url:'/fabrication',
-    templateUrl:'views/fabrication.html'
-  })
-
   .state('fullride',{
     url:'/fullride',
     templateUrl:'views/fullride.html'
-  })
-
-  .state('ideation',{
-    url:'/ideation',
-    templateUrl:'views/ideation.html'
-  })
-
-  .state('visualisation',{
-    url:'/visualisation',
-    templateUrl:'views/visualisation.html'
   })
 
   ;
@@ -161,6 +146,11 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
 
 // store all the refences and their content. These references are available from every page of the application
 .controller('startCtrl',function($rootScope){
+
+  // define if the side menu is draggable
+  $rootScope.toggleDrag = false;
+
+
   $rootScope.references= [{
     name : 'Portail B2B',
     customer : 'Somfy',
