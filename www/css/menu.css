@@ -111,7 +111,7 @@
   color : transparent;
   border : solid #275466;
   border-width : 0px 3px 0px 0px;
-  filter: drop-shadow(4px 4px 10px rgba(0,0,0,1));
+  filter: drop-shadow(3px 3px 10px rgba(0,0,0,1));
 }
 
 .cut-corner-bottom-left::after,
@@ -129,7 +129,7 @@
   transform-origin: left top;
   border : solid #275466;
   border-width : 0px 0px 0px 3px;
-  filter: drop-shadow(-4px 4px 10px rgba(0,0,0,1));
+  filter: drop-shadow(-3px 3px 10px rgba(0,0,0,1));
 }
 
 .cut-corner-top-right::after,
@@ -147,7 +147,7 @@
   transform-origin: bottom right;
   border : solid #275466;
   border-width : 0px 3px 0px 0px;
-  filter: drop-shadow(4px -4px 10px rgba(0,0,0,1));
+  filter: drop-shadow(3px -3px 10px rgba(0,0,0,1));
 }
 
 .cut-corner-top-left::after,
@@ -165,7 +165,7 @@
   transform-origin: bottom left;
   border : solid #275466;
   border-width : 0px 0px 0px 3px;
-  filter: drop-shadow(-4px -4px 10px rgba(0,0,0,1));
+  filter: drop-shadow(-3px -3px 10px rgba(0,0,0,1));
 }
 
 /*adapting to screen size*/
