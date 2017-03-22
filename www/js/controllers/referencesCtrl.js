@@ -8,7 +8,7 @@ angular.module('starter')
 {
 
  // Change the parameter selected to true for the selected reference.
-goToDetail = function(){
+/*goToDetail = function(){
   $(function(){
     for (var i = 0, c = $rootScope.references.length; i < c; i++) {
         $rootScope.references[i].selected = false; // Initialize all the reference.selected to false
@@ -20,12 +20,12 @@ goToDetail = function(){
 };
 
 (function(){
-    /*1*/var customSelects = document.querySelectorAll(".custom-dropdown__select");
-    /*2*/for(var i=0; i<customSelects.length; i++){
+    /*1var customSelects = document.querySelectorAll(".custom-dropdown__select");
+    2for(var i=0; i<customSelects.length; i++){
         if (customSelects[i].hasAttribute("disabled")){
             customSelects[i].parentNode.className += " custom-dropdown--disabled";
         }
     }
-})()
+})()*/
 
 });
