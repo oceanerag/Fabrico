@@ -8,6 +8,19 @@ angular.module('starter')
 
 .controller('refCtrl', function($rootScope,$scope,$state){
 
+    // disables swipe for side menu when enterring state
+
+    $scope.$on("$ionicView.beforeEnter", function(event, data){
+      $rootScope.toggleDrag = false;
+    });
+
+    // enables swipe for side menu when leaving state
+
+    $scope.$on("$ionicView.afterLeave", function(event, data){
+      $rootScope.toggleDrag = true;
+    });
+
+
     // set the inital index for the coverflow
     var initialIndex = 2;
     $scope.coverData = {coverIndex : initialIndex};
@@ -46,4 +59,25 @@ angular.module('starter')
         },
     });
   });
+
+  // list part
+  // Change the parameter selected to true for the selected reference.
+  goToDetail = function(){
+    for (var i = 0, c = $rootScope.references.length; i < c; i++) {
+      $rootScope.references[i].selected = false; // Initialize all the reference.selected to false
+    };
+    var x = document.getElementById("mySelect").selectedIndex;
+    $rootScope.references[x-1].selected = true;
+    $state.go('refDetail');;
+  };
+
+  (function(){
+     /*1*/var customSelects = document.querySelectorAll(".custom-dropdown__select");
+     /*2*/for(var i=0; i<customSelects.length; i++){
+         if (customSelects[i].hasAttribute("disabled")){
+             customSelects[i].parentNode.className += " custom-dropdown--disabled";
+         }
+     }
+  })();
+
 });

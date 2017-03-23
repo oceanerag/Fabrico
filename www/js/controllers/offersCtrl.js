@@ -7,7 +7,9 @@
 angular.module('starter')
 
 .controller('offersCtrl', function($scope, $state){
-          $scope.goToPage= function(page){
-            $state.go(page);
-          }
-      });
+
+    $scope.goToPage= function(page){
+      $state.go(page);
+    }
+    
+});

@@ -6,7 +6,22 @@
 
 angular.module('starter')
 
-.controller('tourCtrl', function($scope, $state, $ionicHistory){
+.controller('tourCtrl', function($scope, $state, $rootScope){
+
+  // disables swipe for side menu when enterring state
+
+  $scope.$on("$ionicView.beforeEnter", function(event, data){
+    $rootScope.toggleDrag = false;
+  });
+
+  // enables swipe for side menu when leaving state
+
+  $scope.$on("$ionicView.afterLeave", function(event, data){
+    $rootScope.toggleDrag = true;
+  });
+
+
+  // functions for navigation towards other parts of the app
 
   //initialize the triangles
   $scope.initTour = function($scope){
@@ -57,7 +72,7 @@ angular.module('starter')
           height: $(pageSelector).parent().height()*2,
           fontSize : '3em'
         }, {
-          duration : 1000,
+          duration : 400,
           queue : false
         });
 
@@ -68,14 +83,14 @@ angular.module('starter')
           width: $(pageSelector).parent().width()*0.2,
           height: $(pageSelector).parent().height()*0.2,
         }, {
-          duration : 500,
+          duration : 400,
           queue : false
         });
 
         //change page after the animation
         setTimeout(function(){
           $state.go(page);
-        }, 1000);
+        }, 500);
 
         //give back their size to the triangles (permits to recover the virtual Tour as it was)
        setTimeout(function(){
@@ -86,11 +101,21 @@ angular.module('starter')
           fontSize: '1.4em',
           zIndex: '25'
         })
-      }, 2000);
+      }, 1000);
 
     })
   };
 
+<<<<<<< HEAD
+=======
+  $scope.goToPage = goToPage;
+
+
+
+
+  // virtual tour part
+
+>>>>>>> a8986ab354197061736b5df2cdf04693ba29082f
   $(document).ready(function() {
 		"use strict";
 
@@ -106,7 +131,11 @@ angular.module('starter')
 			showControlsOnHover: false,
 			showSceneThumbsCtrl: false,
 			showSceneMenuCtrl: false, /**menu icon to preview different scenes*/
+<<<<<<< HEAD
 			showSceneNextPrevCtrl: true, /**right/left arrows next/previous scenes*/
+=======
+			showSceneNextPrevCtrl: false, /**right/left arrows next/previous scenes*/
+>>>>>>> a8986ab354197061736b5df2cdf04693ba29082f
 			showZoomCtrl: false,
 			showShareCtrl: false,
 			showFullscreenCtrl: false,
@@ -122,6 +151,7 @@ angular.module('starter')
 			scenes: {
 				main: {
 					type: "sphere", // specifies the scene type ("box", "sphere", "cylinder")
+<<<<<<< HEAD
 					yaw: 0,
 					pitch: 0,
 					image: "img/Salle1_Gauche.JPG",
@@ -203,10 +233,68 @@ angular.module('starter')
 							sceneId: "Middle",
 							popoverPlacement: "top",
 							popoverContent: "Revenir en arrière",
+=======
+					//titleHtml:true,
+					titleSelector: "#titleScene",
+					//title: "Main Scene",
+					yaw: 0,
+					pitch: 0,
+					compassNorthOffset: 0,
+					image: "img/Yoko4.jpg",
+					//hotSpots definition
+					hotSpots: [
+						{
+							yaw: 297,
+							pitch: -20,
+							sceneId: "next", //Link beetween scenes
+							popoverShow: true, //set to true if you wan to display your popup on default
+							popoverPlacement: "top",
+							popoverContent: "Pour aller vers la salle suivante",
+						},
+						{
+							yaw: 319,
+							pitch: -14,
+							popoverShow: true,
+							popoverPlacement: "top",
+							popoverContent: "Un tableau",
+						},
+						{
+							yaw: 45,
+							pitch: -17,
+							popoverShow: false,
+							popoverPlacement: "top",
+							popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
+							popoverSelector: "#popover1",
+						},
+					],
+				},
+				next: {
+					type: "sphere", // specifies the scene type ("box", "sphere", "cylinder")
+					title: "Flash Gordon",
+					image: "img/Flahs1.jpg",
+					yaw: 118,
+					pitch: -28,
+					hotSpots: [
+						{
+							yaw: 122,
+							pitch: -19,
+							popoverShow: true,
+							popoverContent: "Ca travaille dur!",
+>>>>>>> a8986ab354197061736b5df2cdf04693ba29082f
 						}
 					],
 				},
 			},
 		});
+<<<<<<< HEAD
   });
+=======
+
+
+		$("#fullscreen").click(function() {
+			panorama.ipanorama("fullscreen");
+		});
+	});
+
+>>>>>>> a8986ab354197061736b5df2cdf04693ba29082f
 });

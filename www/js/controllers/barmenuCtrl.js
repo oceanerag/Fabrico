@@ -9,13 +9,15 @@ angular.module('starter')
 
 .controller('barMenuCtrl', function ($scope, $ionicSideMenuDelegate){
 
-	$scope.toggleSideMenu = function() {
+  //$rootScope.toggledrag = true;
+
+	/*$scope.toggleSideMenu = function() {
   if ($ionicSideMenuDelegate.isOpen()) {
     $ionicSideMenuDelegate.toggleLeft(false); // close
   } else {
     $ionicSideMenuDelegate.toggleLeft(); // open
   }
-}
+}*/
 
 
 });

@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="lib/ipanorama/src/ipanorama.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/effect.css">
-   <link rel="stylesheet" type="text/css" href="css/panorama.css">
+    <link rel="stylesheet" type="text/css" href="css/panorama.css">
 
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -73,13 +73,12 @@
 
     <link href="css/refDetail.css" rel="stylesheet"/>
     <!--the controller for the references in the side menu -->
-    <script src="js/controllers/referencesCtrl.js"></script>
 
     <script src="js/controllers/offersCtrl.js"></script>
     <link href="css/offers.css" rel="stylesheet"/>
 
     <!--controller for the fullride -->
-    <script src="js/controllers/fullrideCtrl.js"></script>
+    <!--script src="js/controllers/fullrideCtrl.js"></script-->
     <link href="css/fullride.css" rel="stylesheet"/>
 
     <link href="css/contacts.css" rel="stylesheet"/>
@@ -99,7 +98,7 @@
   <body ng-app="starter" ng-controller ='startCtrl'> <!-- Start the ng module and the controller from app.js -->
 
     <ion-side-menus enable-menu-with-back-views="true">
-      <ion-side-menu-content>
+      <ion-side-menu-content drag-content="toggleDrag">
         <ion-nav-bar align-title="center">
           <!-- Enable backButton included in ionic's framework, MUST be in an "ion-nav-bar"-->
           <ion-nav-back-button>
@@ -135,7 +134,7 @@
         <ion-nav-view class="fill-space" animation="no-animation"></ion-nav-view>
       </ion-side-menu-content>
       <!--Definition of the side-menu, on the left-->
-      <ion-side-menu side="left" ng-controller="referencesCtrl">
+      <ion-side-menu side="left">
         <ion-header-bar>
           <h1 class="title">La Fabrique</h1>
         </ion-header-bar>

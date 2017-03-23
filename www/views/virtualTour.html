@@ -5,6 +5,7 @@
   Leons and Yasmina on 15/01/2017
   @required __
 -->
+
 <ion-view ng-init="initTour()">
 
   <ion-content scroll="false">
@@ -13,22 +14,20 @@
       <!--div class="top-right fill-space" id="over-div"></div-->
 
       <div class="virtualTour-tab top-left cut-corner cut-corner-bottom-right" id="presentationVT-tab">
-         <span class="virtualTour-tab-span" id="presentation-spanVT"> Presentation </span>
+         <span class="virtualTour-tab-span" id="presentation-spanVT" ng-click="goToPage('presentation')"> Presentation </span>
       </div>
 
       <div class="virtualTour-tab top-right cut-corner cut-corner-bottom-left" id="referencesVT-tab">
-         <span class="virtualTour-tab-span" id="references-spanVT"> References </span>
+         <span class="virtualTour-tab-span" id="references-spanVT" ng-click="goToPage('references')"> References </span>
       </div>
 
       <div class="virtualTour-tab bottom-left cut-corner cut-corner-top-right" id="offersVT-tab">
-         <span class="virtualTour-tab-span" id="offers-spanVT"> Offers </span>
+         <span class="virtualTour-tab-span" id="offers-spanVT" ng-click="goToPage('offers')"> Offers </span>
       </div>
 
       <div class="virtualTour-tab bottom-right cut-corner cut-corner-top-left" id="agendaVT-tab">
-         <span class="virtualTour-tab-span" id="agenda-spanVT"> Agenda </span>
+         <span class="virtualTour-tab-span" id="agenda-spanVT" ng-click="goToPage('agenda')"> Agenda </span>
       </div>
-
-      <img src="img/la-fabrique.png" alt="Image not found" class="background-image"/>
 
     </div>
 
