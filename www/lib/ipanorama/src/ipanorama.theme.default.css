@@ -3,7 +3,7 @@
   @name ipanorama.theme.default.css
   @description a jQuery plugin for creating a panorama viewer and virtual tours
   @version 1.2.2
-  @author Max Lawrence 
+  @author Max Lawrence
   @site http://www.avirtum.com
   @copyright (c) 2016 Max Lawrence (http://www.avirtum.com)
 */
@@ -270,10 +270,10 @@
   background-position: 0 -104px;
 }
 .ipnrm.ipnrm-theme-default.ipnrm-no-zoom-ctrl .ipnrm-btn.ipnrm-btn-scene-prev {
-  top: 5px;
+  top: 180px;
 }
 .ipnrm.ipnrm-theme-default.ipnrm-no-zoom-ctrl .ipnrm-btn.ipnrm-btn-scene-next {
-  top: 36px;
+  top: 220px;
 }
 .ipnrm.ipnrm-theme-default.ipnrm-no-zoom-ctrl .ipnrm-btn.ipnrm-btn-scene-menu {
   top: 67px;
