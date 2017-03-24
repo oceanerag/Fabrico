@@ -161,7 +161,6 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     bulletPoints : [
       "Prototyper le nouveau portail",
       "Présenter la nouvelle expérience utilisateur",
-      "10 jours, 6 templates d'écrans clés, 11 écrans travaillés, 2 prototypes interactifs",
       "Penser et préparer l'expérience mobile"
     ],
     numbers : [
@@ -180,7 +179,6 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     bulletPoints: [
       "Wireframes des écrans et fonctionnalités clés à challenger",
       "Réflexion autour de la nouvelle expérience utilisateur",
-      "12 jours, 3 templates d'écrans clés, 12 écrans travaillés, 1 prototype interactif",
       "Conception participative : collaborer et co-concevoir au travers d'ateliers utilisateurs"
     ],
     numbers : [
@@ -224,20 +222,69 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     ]
   }];
 
-  $rootScope.offers = [{
-    name : 'Ideation',
-    logoUrl : 'img/offers/logos/ideation.png',
-    selected : false,
-    subtitle : 'Digital days, ASE, Ateliers facilities'
+  $rootScope.themes = [{
+      type : 'Ideation',
+      imgUrl : 'img/offers/Ideation.png',
+      selected : false,
+    }, {
+      type : 'Visualisation',
+      imgUrl : 'img/offers/Visualisation.gif',
+      selected : false,
+    }, {
+      type : 'Fabrication',
+      imgUrl : 'img/offers/Fabrication.png',
+      selected : false,
+    }];
+
+  $rootScope.offersDetail = [{
+    name : 'Accelerated solution environment' ,
+    type : 'Ideation' ,
+    description : "L’ASE permet de résoudre des problèmes complexes. Nous réunissons des conditions qui permettent à des groupes de 20 à 100 dirigeants d’innover dans la recherche de solutions et de devenir ainsi auteurs et acteurs du changement." ,
+    dispositif :"3 jours - 20 à 100 personnes ",
   }, {
-    name : 'Visualisation',
-    logoUrl : 'img/offers/logos/visualisation.png',
-    selected : false,
-    subtitle : "Design sprint, Parcours clients"
+    name : 'Digital days' ,
+    type : 'Ideation' ,
+    description : "L’objectif d'un digital day est de créer un esprit d'innovation grâce à l'innovation actuelle et le partage d’expérience." ,
+    dispositif :' 2 jours - 3 personnes',
   }, {
-    name : 'Fabrication',
-    logoUrl : 'img/offers/logos/fabrication.png',
-    selected : false,
-    subtitle : "POC, MVP, Core modèles / pilotes"
+    name : 'Atelier facilités' ,
+    type : 'Ideation' ,
+    description : ' L ideation 3 est blabla' ,
+    dispositif :' 1 jour - 2 personnes',
+  }, {
+    name : 'Design sprint' ,
+    type : 'Visualisation' ,
+    description : ' A hackathon is a design sprint-like event in which computer programmers and others,including graphic designers, interface designers,collaborate intensively on software projects',
+    dispositif :'24 heures - 14 participants',
+  }, {
+    name : 'Parcours client' ,
+    type : 'Visualisation' ,
+    description : ' La visualisation 2 est blabla' ,
+    dispositif :"2 jours - 3 personnes",
+  }, {
+    name : 'Hackaton' ,
+    type : 'Fabrication' ,
+    description : ' La fabrication 1 est blabla' ,
+    dispositif :'24 heures - 14 participants',
+  }, {
+    name : 'Fabrication2' ,
+    type : 'Fabrication' ,
+    description : ' La fabrication 2 est blabla' ,
+    dispositif :' 5 jours - 6 personnes',
+  }
+, {
+    name : 'Fabrication3' ,
+    type : 'Fabrication' ,
+    description : ' La fabrication 3 est blabla' ,
+    dispositif :"1 jours - 12 personnes",
+  }, {
+    name : 'Core modèle pilote' ,
+    type : 'Fabrication' ,
+    description : ' La fabrication 4 est blabla' ,
+    dispositif :' 5 jours - 5 personnes',
   }];
+
+   $rootScope.themeClick = '';
+
+
 });
