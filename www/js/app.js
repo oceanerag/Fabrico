@@ -236,6 +236,10 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
       selected : false,
     }];
 
+  $rootScope.fullride = {
+    imgUrl : 'img/offers/Fullride.png'
+  }
+
   $rootScope.offersDetail = [{
     name : 'Accelerated solution environment' ,
     type : 'Ideation' ,
