@@ -26,10 +26,9 @@
 
 
 #video_presentation{
-  display:block;
   margin:auto;
-  height: 50%; /* à changer */
-  width: 50%; /* à changer */
+  height: 60%; 
+  width: 75%; 
 }
 
 #video_presentation video{
@@ -46,8 +45,11 @@
   margin-right: 5%;
   margin-left: 5%;
   text-align: justify;
+  font-size: 1.45em;
+  line-height: 1.5;
   color: #ffffff;
   box-shadow: 5px 5px 5px #aab4b9;
+  font-weight: 0; 
 }
 
 
