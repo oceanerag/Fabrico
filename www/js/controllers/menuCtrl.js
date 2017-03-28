@@ -6,7 +6,7 @@
 
 angular.module('starter')
 
-.controller('menuCtrl', function($scope, $state, $ionicHistory, $ionicSideMenuDelegate){
+.controller('menuCtrl', function($scope, $state){
 
   //initialize the triangles
   $scope.initMenu = function($scope){
@@ -55,7 +55,7 @@ angular.module('starter')
           height: $(".menu-tab").parent().height()*0.2,
           fontSize: '0.45em'
         }, {
-          duration : 1000,
+          duration : 600,
           queue : false
         });
 
@@ -64,7 +64,7 @@ angular.module('starter')
         // go to the virtualTour
         setTimeout(function(){
           $state.go(page);
-        }, 1000);
+        }, 800);
 
       } else {
 
@@ -77,11 +77,11 @@ angular.module('starter')
 
         //increase its size
         .animate({
-          width: $(pageSelector).parent().width()*2,
-          height: $(pageSelector).parent().height()*2,
+          width: $(pageSelector).parent().width()*2.2,
+          height: $(pageSelector).parent().height()*2.2,
           fontSize : '3em'
         }, {
-          duration : 1000,
+          duration : 400,
           queue : false
         });
 
@@ -93,22 +93,20 @@ angular.module('starter')
           height: $(pageSelector).parent().height()*0.2,
           fontSize: '0.45em'
         }, {
-          duration : 500,
+          duration : 400,
           queue : false
         });
 
         //change page after the animation
         setTimeout(function(){
           $state.go(page);
-        }, 1000);
+        }, 500);
 
       }
     })
   };
 
-  $scope.toggleLeftSideMenu = function() {
-    	$ionicSideMenuDelegate.toggleLeft();
+  $scope.goToPage = goToPage;
 
-  };
 
 });

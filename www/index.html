@@ -23,9 +23,12 @@
     <link rel="stylesheet" type="text/css" href="lib/ipanorama/src/ipanorama.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/effect.css">
-   <link rel="stylesheet" type="text/css" href="css/panorama.css">
-   <link rel="stylesheet" type="text/css" href="css/agenda.css">
+
+    <link rel="stylesheet" type="text/css" href="css/agenda.css">
     <link rel="stylesheet" type="text/css" href="css/presentation.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/panorama.css">
 
 
 
@@ -67,7 +70,7 @@
     <script src="js/controllers/barmenuCtrl.js"></script>
 
 
-      <!--second controller for the virtual tour -->
+      <!--controller for the virtual tour -->
     <link href="css/tour.css" rel="stylesheet">
     <script src="js/controllers/tourCtrl.js"></script>
 
@@ -76,13 +79,12 @@
 
     <link href="css/refDetail.css" rel="stylesheet"/>
     <!--the controller for the references in the side menu -->
-    <script src="js/controllers/referencesCtrl.js"></script>
 
     <script src="js/controllers/offersCtrl.js"></script>
     <link href="css/offers.css" rel="stylesheet"/>
 
     <!--controller for the fullride -->
-    <script src="js/controllers/fullrideCtrl.js"></script>
+    <!--script src="js/controllers/fullrideCtrl.js"></script-->
     <link href="css/fullride.css" rel="stylesheet"/>
 
     <link href="css/contacts.css" rel="stylesheet"/>
@@ -102,7 +104,7 @@
   <body ng-app="starter" ng-controller ='startCtrl'> <!-- Start the ng module and the controller from app.js -->
 
     <ion-side-menus enable-menu-with-back-views="true">
-      <ion-side-menu-content>
+      <ion-side-menu-content drag-content="toggleDrag">
         <ion-nav-bar align-title="center">
           <!-- Enable backButton included in ionic's framework, MUST be in an "ion-nav-bar"-->
           <ion-nav-back-button>
@@ -138,7 +140,7 @@
         <ion-nav-view class="fill-space" animation="no-animation"></ion-nav-view>
       </ion-side-menu-content>
       <!--Definition of the side-menu, on the left-->
-      <ion-side-menu side="left" ng-controller="referencesCtrl">
+      <ion-side-menu side="left">
         <ion-header-bar>
           <h1 class="title">La Fabrique</h1>
         </ion-header-bar>
@@ -147,20 +149,20 @@
             <ion-item menu-close onclick="window.location='#/presentation';">
               Presentation
             </ion-item>
-            <ion-item menu-close onclick="window.location='#/contacts';">
-              Contacts
-            </ion-item>
             <ion-item menu-close onclick="window.location='#/virtualTour';">
               Virtual Tour
             </ion-item>
-            <ion-item menu-close onclick="window.location='#/agenda';">
-              Agenda
+            <ion-item menu-close onclick="window.location='#/references';">
+              References
             </ion-item>
             <ion-item menu-close onclick="window.location='#/offers';">
               Offers
             </ion-item>
-            <ion-item menu-close onclick="window.location='#/references';">
-              References
+            <ion-item menu-close onclick="window.location='#/agenda';">
+              Agenda
+            </ion-item>
+            <ion-item menu-close onclick="window.location='#/contacts';">
+              Contacts
             </ion-item>
           </ion-list>
         </ion-content>

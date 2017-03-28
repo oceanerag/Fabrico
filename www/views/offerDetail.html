@@ -5,13 +5,40 @@
 -->
 
 <ion-view>
-  <ion-content scroll="false">
 
-    <h1> Detailed offer </h1>
+  <ion-content id="offerContent" ng-repeat="theme in themes" ng-show = "theme.selected" scroll="false">
+    <header id="headerOffer">
+      <h1 class="themeTitle"> {{themeClick}}</h1>
+      <div class="divImage">
+        <img class="themeImage"  ng-src="{{theme.imgUrl}}" ng-show="theme.imgUrl" alt="image"/>
 
-      <div ng-repeat="offer in offers" ng-show = "offer.selected == true"> <!-- Show only the reference selected on the coverflow-->
-        <p>{{offer.name}}</p>
       </div>
+    </header>
+    <section id="allCard">
+        <div id="card" ng-repeat="offer in offersDetail" ng-show = "offer.type==themeClick"> <!-- Show only the reference selected on the coverflow-->
+            <div class="divOfferName">
+              <div class="OfferName">
+                {{offer.name}}
+              </div>
+            </div>
+            <div class="divOfferDispositif">
+              <i class="ion-clipboard"></i>
+              <div class="offerDispositif">
 
+                &nbsp;{{offer.dispositif}}
+              </div>
+            </div>
+            <div class="divOfferDescription">  <div class="offerDescription">
+                {{offer.description}}
+              </div>
+            </div>
+            <div class="price">
+              <i class="ion-social-euro"></i>
+              &nbsp;Prix </div>
+        </div>
+    </section>
+    <footer class="devis">
+        <p>Les devis se font sur mesure pour s'adapter à vos besoins, n'hésitez pas à nous contacter</p>
+    </footer>
   </ion-content>
 </ion-view>
