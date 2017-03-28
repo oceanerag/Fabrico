@@ -5,11 +5,13 @@
 -->
 
 <ion-view>
-  <ion-content id="offerContent" ng-repeat="theme in themes" ng-show = "theme.selected">
+
+  <ion-content id="offerContent" ng-repeat="theme in themes" ng-show = "theme.selected" scroll="false">
     <header id="headerOffer">
       <h1 class="themeTitle"> {{themeClick}}</h1>
       <div class="divImage">
         <img class="themeImage"  ng-src="{{theme.imgUrl}}" ng-show="theme.imgUrl" alt="image"/>
+
       </div>
     </header>
     <section id="allCard">
