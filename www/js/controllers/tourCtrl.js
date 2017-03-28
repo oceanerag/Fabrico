@@ -151,7 +151,6 @@ angular.module('starter')
 							popoverPlacement: "top",
 							popoverContent: "Avancer dans la viste vituelle",
 						}
-
 					],
 				},
 				Middle: {

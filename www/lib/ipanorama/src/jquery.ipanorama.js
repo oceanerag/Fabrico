@@ -460,10 +460,10 @@
 						image.src = window.URL.createObjectURL(blob);
 					}, this);
 					xhr.onerror = $.proxy(function( e ) {
-						/*var target = e.currentTarget;
+						var target = e.currentTarget;
 						this.hideLoadInfo();
 						this.showMessage("<p>Cannot load texture</p>");
-						console.error("Cannot load texture '" + texture[target.customKey] + "'");*/
+						console.error("Cannot load texture '" + texture[target.customKey] + "'");
 					}, this);
 					xhr.send();
 				}
