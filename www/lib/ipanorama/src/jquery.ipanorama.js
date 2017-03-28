@@ -451,20 +451,20 @@
 							}
 						}, this, target);
 						image.onerror = $.proxy(function ( xhr ) {
-							/*if(++countLoaded == count) {
+							if(++countLoaded == count) {
 								this.hideLoadInfo();
 								this.showMessage("<p>Cannot load texture</p>");
 								console.error("Cannot load texture '" + texture[xhr.customKey] + "'");
-							}*/
+							}
 						}, this, target);
 						image.src = window.URL.createObjectURL(blob);
 					}, this);
-					/*xhr.onerror = $.proxy(function( e ) {
-						var target = e.currentTarget;
+					xhr.onerror = $.proxy(function( e ) {
+						/*var target = e.currentTarget;
 						this.hideLoadInfo();
 						this.showMessage("<p>Cannot load texture</p>");
-						console.error("Cannot load texture '" + texture[target.customKey] + "'");
-					}, this);*/
+						console.error("Cannot load texture '" + texture[target.customKey] + "'");*/
+					}, this);
 					xhr.send();
 				}
 			}
