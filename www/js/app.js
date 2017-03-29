@@ -155,8 +155,8 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     name : 'Portail B2B',
     customer : 'Somfy',
     selected : false,
-    logoUrl : 'img/references/logos/somfy.png',
-    imgUrl : 'img/references/SomphyOk.png',
+    logoUrl : 'img/references/somfy/somfy_logo.png',
+    imgUrl : 'img/references/somfy/Somfy.png',
     video : 'video/VideoPresentationCapgemini.720p.mp4',
     subtitle : 'Concrétiser la roadmap réalisée en parrallèle et accélérer sa réalisation ',
     bulletPoints : [
@@ -174,8 +174,8 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     name : 'SEB&SHARE',
     customer: 'Groupe SEB',
     selected : false,
-    logoUrl : 'img/references/logos/groupe-seb.png',
-    imgUrl : 'img/references/SebandShareOK.png',
+    logoUrl : 'img/references/seb/seb_logo.png',
+    imgUrl : 'img/references/seb/seb.png',
     subtitle : "Accompagner le client dans la remise en questin de l'ergonomie de son outil",
     bulletPoints: [
       "Wireframes des écrans et fonctionnalités clés à challenger",
@@ -192,8 +192,8 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     name : 'Hackaton ENEDIS',
     customer : 'ENEDIS',
     selected : false,
-    logoUrl : 'img/references/logos/enedis.png',
-    imgUrl : 'img/references/EnedisOK.png',
+    logoUrl : 'img/references/enedis/enedis_logo.png',
+    imgUrl : 'img/references/enedis/enedis.png',
     subtitle : "Comment assurer la sécurité du technicien isolé ? ",
     bulletPoints :[
      " Enjeu : Développer en un temps record un prototype",
@@ -211,8 +211,8 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     name : 'Portail Client - Séché Environnement',
     customer : 'Séché Environnement',
     selected : false,
-    logoUrl : 'img/references/logos/seche-environnement.png',
-    imgUrl : 'img/references/SecheEnvironnementOK.png',
+    logoUrl : 'img/references/secheenvironnement/secheenvironnement_logo.png',
+    imgUrl : 'img/references/secheenvironnement/secheenvironnement.png',
     subtitle: "Comment vérifier rapidement l'intégration d'une nouvelle solution dans un SI existant",
     bulletPoints : [
       "Concept: Développer rapidement un POC pour prouver la faisabilité",
@@ -229,7 +229,7 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
       description : 'Come in with an idea, Come out with a project !'
     }, {
       type : 'Visualisation',
-      imgUrl : 'img/offers/Visualisation.gif',
+      imgUrl : 'img/offers/Visualisation.png',
       description : 'Come in with a project, Come out with a vision !'
     }, {
       type : 'Fabrication',
