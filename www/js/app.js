@@ -225,16 +225,13 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
 
   $rootScope.themes = [{
       type : 'Ideation',
-      imgUrl : 'img/offers/Ideation.png',
-      selected : false,
+      imgUrl : 'img/offers/Ideation.png'
     }, {
       type : 'Visualisation',
-      imgUrl : 'img/offers/Visualisation.gif',
-      selected : false,
+      imgUrl : 'img/offers/Visualisation.gif'
     }, {
       type : 'Fabrication',
-      imgUrl : 'img/offers/Fabrication.png',
-      selected : false,
+      imgUrl : 'img/offers/Fabrication.png'
     }];
 
   $rootScope.fullride = {
@@ -290,6 +287,6 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
   }];
 
    $rootScope.themeClick = '';
-
+   $rootScope.themeFocus = '';
 
 });

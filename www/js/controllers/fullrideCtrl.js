@@ -13,4 +13,8 @@ angular.module('starter')
     $state.go('offerDetail');
   };
 
+  $scope.focusTheme = function(theme) {
+    $rootScope.themeFocus = theme;
+  }
+
 });

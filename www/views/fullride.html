@@ -10,7 +10,7 @@
 
       <section class="fullride-card-container">
 
-          <div class="fullride-card" ng-repeat="theme in themes" ng-click="goToOffer(theme.type)"> <!-- Show only the reference selected on the coverflow-->
+          <div class="fullride-card" ng-class="{'fullride-card--tapped' : theme.type===themeFocus}" ng-repeat="theme in themes" ng-click="focusTheme(theme.type)"> <!-- Show only the reference selected on the coverflow-->
 
               <div class="fullride-card-theme">
                 <div class="fullride-card-theme-name">
@@ -24,6 +24,12 @@
                     {{offer.name}}
                   </div>
                 </div>
+              </div>
+
+              <div class="fullride-card-seemore-container">
+                <button class="fullride-card-seemore" ng-show="theme.type===themeFocus" ng-click="goToOffer(theme.type)">
+                  SEE MORE
+                </button>
               </div>
 
       </section>

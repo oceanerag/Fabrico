@@ -55,7 +55,7 @@ height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-	animation-duration: 0.2s;
+	animation-duration: 0.4s;
   border-radius: 2px;
 }
 .fullride-card--tapped{
@@ -110,4 +110,20 @@ height: 100%;
   font-size: 1.5em;
   padding-top: 3%;
 
+}
+
+.fullride-card-seemore-container{
+  height : 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fullride-card-seemore{
+  font-size: 1.5em;
+  font-weight: bold;
+  color : #40b8e1;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
 }
