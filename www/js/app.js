@@ -61,7 +61,8 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
   .state('virtualTour', {
     url:'/virtualTour',
     templateUrl:'views/virtualTour.html',
-    controller : 'tourCtrl'
+    controller : 'tourCtrl',
+    cache : false,
   })
 
   .state('agenda', {
