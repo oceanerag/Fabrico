@@ -149,23 +149,24 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
 .controller('startCtrl',function($rootScope){
 
   $rootScope.references= [{
-    name : 'Portail B2B',
-    customer : 'Somfy',
+    name : 'Hackaton ENEDIS',
+    customer : 'ENEDIS',
     selected : false,
-    logoUrl : 'img/references/somfy/somfy_logo.png',
-    imgUrl : 'img/references/somfy/Somfy.png',
-    video : 'video/VideoPresentationCapgemini.720p.mp4',
-    subtitle : 'Concrétiser la roadmap réalisée en parrallèle et accélérer sa réalisation ',
-    bulletPoints : [
-      "Prototyper le nouveau portail",
-      "Présenter la nouvelle expérience utilisateur",
-      "Penser et préparer l'expérience mobile"
+    logoUrl : 'img/references/enedis/enedis_logo.png',
+    imgUrl : 'img/references/enedis/enedis.png',
+    subtitle : "Comment assurer la sécurité du technicien isolé ? ",
+    bulletPoints :[
+     " Enjeu : Développer en un temps record un prototype",
+     "Etre acteur de l'innovation",
+     "Nouvelles idées pour résoudre des défis commerciaux",
+     "Apprendre, travailler dans des conditions particulières, produire"
     ],
     numbers : [
-      "10 jours",
-      "6 templates d'écrans clés",
-      "11 écrans travaillés",
-      "2 prototypes interactifs"
+      "24h de code",
+      "14 participants",
+      "2 équipes",
+      "2 prototypes"
+
     ]
   }, {
     name : 'SEB&SHARE',
@@ -186,25 +187,6 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
       "1 prototype interactif"
     ]
   }, {
-    name : 'Hackaton ENEDIS',
-    customer : 'ENEDIS',
-    selected : false,
-    logoUrl : 'img/references/enedis/enedis_logo.png',
-    imgUrl : 'img/references/enedis/enedis.png',
-    subtitle : "Comment assurer la sécurité du technicien isolé ? ",
-    bulletPoints :[
-     " Enjeu : Développer en un temps record un prototype",
-     "Etre acteur de l'innovation",
-     "Nouvelles idées pour résoudre des défis commerciaux",
-     "Apprendre, travailler dans des conditions particulières, produire"
-    ],
-    numbers : [
-      "24h de code",
-      "14 participants",
-      "2 équipes",
-      "2 prototypes"
-    ]
-  }, {
     name : 'Portail Client - Séché Environnement',
     customer : 'Séché Environnement',
     selected : false,
@@ -217,6 +199,25 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
       "Visualisation de solution",
       "Validation technique et fonctionnelle",
       "Mise en production"
+    ]
+  }, {
+    name : 'Portail B2B',
+    customer : 'Somfy',
+    selected : false,
+    logoUrl : 'img/references/somfy/somfy_logo.png',
+    imgUrl : 'img/references/somfy/Somfy.png',
+    video : 'video/VideoPresentationCapgemini.720p.mp4',
+    subtitle : 'Concrétiser la roadmap réalisée en parrallèle et accélérer sa réalisation ',
+    bulletPoints : [
+      "Prototyper le nouveau portail",
+      "Présenter la nouvelle expérience utilisateur",
+      "Penser et préparer l'expérience mobile"
+    ],
+    numbers : [
+      "10 jours",
+      "6 templates d'écrans clés",
+      "11 écrans travaillés",
+      "2 prototypes interactifs"
     ]
   }];
 
