@@ -61,7 +61,8 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
   .state('virtualTour', {
     url:'/virtualTour',
     templateUrl:'views/virtualTour.html',
-    controller : 'tourCtrl'
+    controller : 'tourCtrl',
+    cache : false,
   })
 
   .state('agenda', {
@@ -193,7 +194,7 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     customer : 'ENEDIS',
     selected : false,
     logoUrl : 'img/references/logos/enedis.png',
-    imgUrl : 'img/references/EnedisOK.png',
+    imgUrl : 'img/references/logos/enedis.png',
     subtitle : "Comment assurer la sécurité du technicien isolé ? ",
     bulletPoints :[
      " Enjeu : Développer en un temps record un prototype",
