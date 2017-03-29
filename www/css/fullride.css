@@ -60,6 +60,8 @@ height: 100%;
 }
 .fullride-card--tapped{
 	box-shadow: 0px 8px 8px #275466;
+  width : 32%;
+  height : 96%;
 
 }
 .fullride-card-theme{
@@ -107,7 +109,7 @@ height: 100%;
   height:15%;
   text-align: center;
   color: white;
-  font-size: 1.5em;
+  font-size: 2em;
   padding-top: 3%;
 
 }

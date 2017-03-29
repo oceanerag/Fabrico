@@ -34,7 +34,7 @@
 
       </section>
       <footer class="fullride-theme-description">
-          <p>Les devis se font sur mesure pour s'adapter à vos besoins, n'hésitez pas à nous contacter</p>
+          <p ng-repeat="theme in themes" ng-show="theme.type===themeFocus">{{theme.description}}</p>
       </footer>
     </ion-content>
 
