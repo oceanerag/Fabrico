@@ -1,0 +1,24 @@
+/* @author Leon B on 11/12/2016
+*/
+
+.agenda {
+  background-color: #0b3140;
+  background-size: 100% 100%;
+  font-family: 'HelveticaNeueLT', serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.calendar  {
+  margin-top: 0%;
+  margin-left: 2%;
+  margin-right: 2%
+  margin-bottom: 0%;
+  overflow: hidden;
+
+}
+
+.page_agenda {
+ background-color: #f0f0f0;
+
+}
