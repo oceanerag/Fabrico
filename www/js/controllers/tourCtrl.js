@@ -177,7 +177,7 @@ angular.module('starter')
 				},
 				Middle: {
 					type: "sphere", // specifies the scene type ("box", "sphere", "cylinder")
-					image: "img/Salle1_Milieu.jpg",
+					image: "img/Salle1_Milieu.JPG",
 					yaw: 105.85,
 					pitch: -5.95,
 					hotSpots: [
@@ -208,7 +208,7 @@ angular.module('starter')
 				},
 				Right: {
 					type: "sphere", // specifies the scene type ("box", "sphere", "cylinder")
-					image: "img/Salle1_Droite.jpg",
+					image: "img/Salle1_Droite.JPG",
 					yaw: 65.56,
 					pitch: -13.21,
 					hotSpots: [
