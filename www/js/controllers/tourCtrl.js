@@ -173,7 +173,6 @@ angular.module('starter')
 							popoverPlacement: "top",
 							popoverContent: "Avancer dans la viste vituelle",
 						}
-
 					],
 				},
 				Middle: {
@@ -186,7 +185,8 @@ angular.module('starter')
 							yaw: 116.45,
 							pitch: -1.34,
 							popoverShow: true,
-							popoverContent: "Groupe-seb",
+              popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
+							popoverSelector: "#popover3", //this select the element you want to show
 						},
 						{
 							yaw: 55.99,
@@ -216,7 +216,8 @@ angular.module('starter')
 							yaw: 39.04,
 							pitch: -13.69,
 							popoverShow: true,
-							popoverContent: "seche-environnement",
+              popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
+							popoverSelector: "#popover4", //this select the element you want to show
 						},
 						{
 							yaw: 177.48,
