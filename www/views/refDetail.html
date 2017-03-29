@@ -12,7 +12,7 @@
         <div id="title_subtitle">
           <div class="ReferenceName" ng-show="reference.name">{{reference.name}}
           </div>
-          
+
           <div class="ReferenceSubtitle" ng-show="reference.subtitle">
           <i class = "ion-paper-airplane"></i> &nbsp;{{reference.subtitle}}
           </div>
@@ -30,17 +30,17 @@
             <div class="contener_slide">
               <div class="slid_1"><img class="slid_1_img" ng-src="{{reference.imgUrl}}" ng-show="reference.imgUrl" alt="Image"> </div>
               <div class="slid_2"><img class="slid_2_img" ng-src="{{reference.imgUrl}}" ng-show="reference.imgUrl" alt="Image" > </div>
-              <div class="slid_3"><img class="slid_3_img" ng-src="{{reference.imgUrl}}" ng-show="reference.imgUrl" alt="Image" > </div> 
+              <div class="slid_3"><img class="slid_3_img" ng-src="{{reference.imgUrl}}" ng-show="reference.imgUrl" alt="Image" > </div>
             </div>
           </div>
-     
+
 
         <div id="bullet_space">
           <div id="bullet_square">
 
             <div id="logo_idea">
 
-              <img class="logo_idee" src="img/iconeOK.png"/>
+              <img class="logo_idee" src="img/references/icone.png"/>
               <span class="info_ref_image"> Information  </span>
             </div>
 
@@ -57,8 +57,8 @@
         </div>
       </div>
 
-      
-      <div id="ReferenceNumbers"> 
+
+      <div id="ReferenceNumbers">
         <div class="numbers" ng-repeat="number in reference.numbers">
           {{number}}
         </div>

@@ -173,12 +173,11 @@ angular.module('starter')
 							popoverPlacement: "top",
 							popoverContent: "Avancer dans la viste vituelle",
 						}
-
 					],
 				},
 				Middle: {
 					type: "sphere", // specifies the scene type ("box", "sphere", "cylinder")
-					image: "img/Salle1_Milieu.jpg",
+					image: "img/Salle1_Milieu.JPG",
 					yaw: 105.85,
 					pitch: -5.95,
 					hotSpots: [
@@ -186,7 +185,8 @@ angular.module('starter')
 							yaw: 116.45,
 							pitch: -1.34,
 							popoverShow: true,
-							popoverContent: "Groupe-seb",
+              popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
+							popoverSelector: "#popover3", //this select the element you want to show
 						},
 						{
 							yaw: 55.99,
@@ -208,7 +208,7 @@ angular.module('starter')
 				},
 				Right: {
 					type: "sphere", // specifies the scene type ("box", "sphere", "cylinder")
-					image: "img/Salle1_Droite.jpg",
+					image: "img/Salle1_Droite.JPG",
 					yaw: 65.56,
 					pitch: -13.21,
 					hotSpots: [
@@ -216,7 +216,8 @@ angular.module('starter')
 							yaw: 39.04,
 							pitch: -13.69,
 							popoverShow: true,
-							popoverContent: "seche-environnement",
+              popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
+							popoverSelector: "#popover4", //this select the element you want to show
 						},
 						{
 							yaw: 177.48,
