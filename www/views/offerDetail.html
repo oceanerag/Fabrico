@@ -5,7 +5,7 @@
 -->
 
 <ion-view>
-  <ion-content id="offerContent" ng-repeat="theme in themes" ng-show = "theme.selected">
+  <ion-content id="offerContent" ng-repeat="theme in themes" ng-show="theme.type===themeClick">
     <header id="headerOffer">
       <h1 class="themeTitle"> {{themeClick}}</h1>
       <div class="divImage">

@@ -10,18 +10,19 @@
 
       <section class="fullride-card-container">
 
-          <div class="fullride-card fullride-card--tapped" ng-repeat="theme in themes"> <!-- Show only the reference selected on the coverflow-->
+          <div class="fullride-card" ng-repeat="theme in themes" ng-click="goToOffer(theme.type)"> <!-- Show only the reference selected on the coverflow-->
 
-              <div class="full-ride-card-theme">
-                <div class="full-ride-card-theme-name">
+              <div class="fullride-card-theme">
+                <div class="fullride-card-theme-name">
                   {{theme.type}}
                 </div>
               </div>
 
-              <div class="fullride-card-list-element" ng-repeat="offer in offersDetail" ng-show={{offer.type==theme.type}}>
-                <div class="fullride-card-list-element-content">
-
-                  {{offer.name}}
+              <div class="fullride-card-list-container">
+                <div class="fullride-card-list-element" ng-repeat="offer in offersDetail" ng-show={{offer.type==theme.type}}>
+                  <div class="fullride-card-list-element-content">
+                    {{offer.name}}
+                  </div>
                 </div>
               </div>
 

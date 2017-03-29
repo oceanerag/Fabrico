@@ -124,7 +124,8 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
 
   .state('fullride',{
     url:'/fullride',
-    templateUrl:'views/fullride.html'
+    templateUrl:'views/fullride.html',
+    controller : 'fullrideCtrl'
   })
 
   ;

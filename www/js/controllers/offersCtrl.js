@@ -12,16 +12,8 @@ angular.module('starter')
             if (page==='fullride'){
               $state.go('fullride');
             } else {
-              for (var i = 0, c = $rootScope.themes.length; i < c; i++) {
-                  if ($rootScope.themes[i].type==page){
-                    $rootScope.themes[i].selected = true; //Change the parameter offers.selected to true
-                  }
-                  else {
-                    $rootScope.themes[i].selected = false; // Change others offers.selected to false
-                  };
-              };
               $rootScope.themeClick= page;
-                $state.go('offerDetail');
+              $state.go('offerDetail');
             }
           });
       };
