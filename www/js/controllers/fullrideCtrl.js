@@ -8,13 +8,14 @@ angular.module('starter')
 
 .controller('fullrideCtrl', function($scope, $rootScope, $state){
 
-  $scope.goToOffer = function(type){
-    $rootScope.themeClick= type;
-    $state.go('offerDetail');
-  };
-
   $scope.focusTheme = function(theme) {
+    if(theme===$rootScope.themeFocus){
+      $rootScope.themeClick= theme;
+      $state.go('offerDetail');
+      $rootScope.themeFocus = '';
+    } else {
     $rootScope.themeFocus = theme;
+    }
   }
 
 });
