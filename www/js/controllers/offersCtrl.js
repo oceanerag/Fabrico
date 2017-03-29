@@ -7,14 +7,14 @@
 angular.module('starter')
 
 .controller('offersCtrl', function($rootScope, $state){
-        goToOffer= function(page){
-          $(function(){
-            if (page==='fullride'){
-              $state.go('fullride');
-            } else {
-              $rootScope.themeClick= page;
-              $state.go('offerDetail');
-            }
-          });
-      };
+    goToOffer= function(page){
+      if (page==='fullride'){
+        $state.go('fullride');
+      } else {
+        $rootScope.themeClick= page;
+        $state.go('offerDetail');
+      }
+    };
+
+
     });
