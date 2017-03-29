@@ -1,84 +1,131 @@
-/* @author Hugo on 11/01/2017
+/* @author Hugo on 27/03/2017
 */
-.fullride {
-	background-color: #f0f0f0;
-    background-size: 100% 100%;
-    font-family: 'HelveticaNeueLT', serif;
+
+#fullride-content{
+
+  display: flex;
+  flex-direction: column;
+  font-family: 'HelveticaNeueLT' , serif;
+  justify-content: space-between;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+#fullride-header{
+  height:10%;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+  border-bottom: 1px solid #aab4b9;
+  color: #275466;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.fullride-title{
+  margin-left: 0%;
+}
+.fullride-image-container{
+height: 110%;
+width: 7%;
+padding-bottom: 2%;
 }
 
-.fullride-header {
-	margin-top: 1%;
-	width: 100%;
-	margin-bottom: 3%;
+.fullride-image{
+height: 100%;
 }
 
-.fullride-header h1{
-    font-family: 'HelveticaNeueLT', serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 3em;
-    color: #275466;
-    margin-right:5%;
-    margin-left: 5%;
-    text-align: center;
-    border-bottom: 1px solid #aab4b9;
+.fullride-card-container{
+  height:70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+	margin-left: 3%;
+	margin-right: 3%
 }
 
+.fullride-card{
+  width: 31%;
+  height:95%;
+  background-color: white;
+  box-shadow: 0px 3px 3px #275466;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+	animation-duration: 0.4s;
+  border-radius: 2px;
+}
+.fullride-card--tapped{
+	box-shadow: 0px 8px 8px #275466;
+  width : 32%;
+  height : 96%;
 
-.fullride-cover {
-	width: 45%;
-	height: 50%;
-    background-color: white;
+}
+.fullride-card-theme{
+  border-radius: 2px;
+  height: 20%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.7em;
+  line-height: 1.5;
+  background-color: #40b8e1;
+  color: white;
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+  display: flex;
 
-    border-width: 1px;
-	border-color: #0b3140;
-	border-style: solid;
-
-    -webkit-box-shadow: 0px 13px 41px 13px rgba(0,0,0,0.37);
-	-moz-box-shadow: 0px 13px 41px 13px rgba(0,0,0,0.37);
-	box-shadow: 0px 13px 41px 13px rgba(0,0,0,0.37);
 }
 
-
-
-#fullride-name {
-	margin-top: 5%;
-	font-family: 'HelveticaNeueLT', serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 2.5em;
-    color: #275466;
-    text-align: center;
+.fullride-card-theme-name{
+  margin : auto;
+  border-radius: 2px;
+}
+.fullride-card-list-container{
+  height : 90%;
+}
+.fullride-card-list-element{
+  height: 20%;
+  border-bottom: 1px solid #aab4b9;
+  color: #275466;
+  font-size: 1.3em;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.fullride-card-list-element-content{
+  margin: auto;
+  width: 80%;
 }
 
-#fullride-details {
-	background-color: #0b3140;
-	border-width: 0.1px;
-	border-color: #0b3140;
-	border-style: solid;
+.fullride-theme-description{
+  background-color: #0b3140;
+  height:15%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  padding-top: 3%;
 
-	margin-top: 4%;
-	margin-right: 0%;
-	margin-left: 0%;
-	height: 100%;
-	padding-top: 3% ;
-	padding-bottom: 2%;
-	padding-right: 10% ;
-	padding-left: 10%;
-	font-family: 'HelveticaNeueLT', serif;
-    font-size: 2em;
-    line-height: 1.5;
-	text-align: center;
-	color: #ffffff;
-	box-shadow: 5px 5px 5px #aab4b9;
 }
 
-#offersList {
-	position: absolute;
-	width: 25%;
-	height: 7%;
-	right: 3%;
-	top:1%;
-	background-color: #f0f0f0;
-  border: 1px solid #f0f0f0;
+.fullride-card-seemore-container{
+  height : 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fullride-card-seemore{
+  font-size: 1.5em;
+  font-weight: bold;
+  color : #40b8e1;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
 }

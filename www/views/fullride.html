@@ -1,39 +1,41 @@
 <ion-view>
-  <ion-content class="fullride" scroll="false">
+    <ion-content id="fullride-content">
 
-    <header class="fullride-header" ng-controller="referencesCtrl">
-      <h1> Full Ride </h1>
-      <!--item where we choose the offer we want to go, confirmation with the button Go to-->
-      <span id="refList" class="custom-dropdown custom-dropdown--large custom-dropdown--white">
-        <select id="mySelect" class="custom-dropdown__select custom-dropdown__select--white" onclick=goToDetail() onchange=goToDetail()>
-          <option>
-            Select a reference
-          </option>
-          <option ng-repeat="reference in references">
-            {{reference.customer}}
-          </option>
-        </select>
-      </span>
-    </header>
+      <header id="fullride-header">
+        <h1 class="fullride-title"> Full Ride</h1>
+        <div class="fullride-image-container">
+          <img class="fullride-image"  ng-src={{fullride.imgUrl}} alt="image"/>
+        </div>
+      </header>
 
-    <div id="coverflow2">
+      <section class="fullride-card-container">
 
-      <!--  For each reference created in refCtrl, it displays the name and logo of the customer-->
-      <div class="fullride-cover" ng-repeat="reference in references" >
-        <!-- Link to go to the refDetail page in the controller when the current cover is selected-->
-        <img ng-src="{{reference.logoUrl}}" class='offer-cover-image'/>
-      </div>
-    </div>
+          <div class="fullride-card" ng-class="{'fullride-card--tapped' : theme.type===themeFocus}" ng-repeat="theme in themes" ng-click="focusTheme(theme.type)"> <!-- Show only the reference selected on the coverflow-->
 
-    <div id="fullride-name">
+              <div class="fullride-card-theme">
+                <div class="fullride-card-theme-name">
+                  {{theme.type}}
+                </div>
+              </div>
 
-      <!-- client name for the selected reference, automatically updates-->
-      {{references[coverData.coverIndex].name}}
-    </div>
+              <div class="fullride-card-list-container">
+                <div class="fullride-card-list-element" ng-repeat="offer in offersDetail" ng-show={{offer.type==theme.type}}>
+                  <div class="fullride-card-list-element-content">
+                    {{offer.name}}
+                  </div>
+                </div>
+              </div>
 
-    <div id="full-ride-details">
-      <p>{{references[coverData.coverIndex].subtitle}}</p>
-    </div>
+              <div class="fullride-card-seemore-container">
+                <button class="fullride-card-seemore" ng-show="theme.type===themeFocus">
+                  SEE MORE
+                </button>
+              </div>
 
-  </ion-content>
+      </section>
+      <footer class="fullride-theme-description">
+          <p ng-repeat="theme in themes" ng-show="theme.type===themeFocus">{{theme.description}}</p>
+      </footer>
+    </ion-content>
+
 </ion-view>

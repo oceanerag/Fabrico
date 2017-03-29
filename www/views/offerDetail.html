@@ -6,7 +6,8 @@
 
 <ion-view>
 
-  <ion-content id="offerContent" ng-repeat="theme in themes" ng-show = "theme.selected" scroll="false">
+  <ion-content id="offerContent" ng-repeat="theme in themes" ng-show="theme.type===themeClick" scroll="false">
+
     <header id="headerOffer">
       <h1 class="themeTitle"> {{themeClick}}</h1>
       <div class="divImage">
@@ -37,8 +38,8 @@
               &nbsp;Prix </div>
         </div>
     </section>
-    <footer class="devis">
-        <p>Les devis se font sur mesure pour s'adapter à vos besoins, n'hésitez pas à nous contacter</p>
+    <footer class="theme-description">
+        <p ng-repeat="theme in themes" ng-show="theme.type===themeClick">{{theme.description}}</p>
     </footer>
   </ion-content>
 </ion-view>

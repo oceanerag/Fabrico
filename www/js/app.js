@@ -124,7 +124,8 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
 
   .state('fullride',{
     url:'/fullride',
-    templateUrl:'views/fullride.html'
+    templateUrl:'views/fullride.html',
+    controller : 'fullrideCtrl'
   })
 
   ;
@@ -225,16 +226,20 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
   $rootScope.themes = [{
       type : 'Ideation',
       imgUrl : 'img/offers/Ideation.png',
-      selected : false,
+      description : 'Come in with an idea, Come out with a project !'
     }, {
       type : 'Visualisation',
       imgUrl : 'img/offers/Visualisation.gif',
-      selected : false,
+      description : 'Come in with a project, Come out with a vision !'
     }, {
       type : 'Fabrication',
       imgUrl : 'img/offers/Fabrication.png',
-      selected : false,
+      description : 'Come in with a vision, Come out with a product !'
     }];
+
+  $rootScope.fullride = {
+    imgUrl : 'img/offers/Fullride.png'
+  }
 
   $rootScope.offersDetail = [{
     name : 'Accelerated solution environment' ,
@@ -285,6 +290,6 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
   }];
 
    $rootScope.themeClick = '';
-
+   $rootScope.themeFocus = '';
 
 });
