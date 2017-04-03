@@ -224,15 +224,15 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
   $rootScope.themes = [{
       type : 'Ideation',
       imgUrl : 'img/offers/Ideation.png',
-      description : 'Come in with an idea, Come out with a project !'
+      description : 'Ideation : Come in with an idea, Come out with a project !'
     }, {
       type : 'Visualisation',
       imgUrl : 'img/offers/Visualisation.png',
-      description : 'Come in with a project, Come out with a vision !'
+      description : 'Visualisation : Come in with a project, Come out with a vision !'
     }, {
       type : 'Fabrication',
       imgUrl : 'img/offers/Fabrication.png',
-      description : 'Come in with a vision, Come out with a product !'
+      description : 'Fabrication : Come in with a vision, Come out with a product !'
     }];
 
   $rootScope.fullride = {
