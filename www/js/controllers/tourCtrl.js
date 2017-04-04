@@ -118,11 +118,11 @@ angular.module('starter')
 
 		//This is where you declare the differents options of your virtual tour
 		var panorama = $("#panorama").ipanorama({
-			theme: "ipnrm-theme-default",
+			theme: "ipnrm-theme-modern",
 			hotSpotSetup: false, 	//Set this setup at true to display pitch and yawn into the browser console
-			onHotSpotSetup: function(yaw, pitch, cameraYaw, cameraPitch, cameraZoom) {
+			/*onHotSpotSetup: function(yaw, pitch, cameraYaw, cameraPitch, cameraZoom) {
 				console.log("yaw: " + yaw + ", pitch: " + pitch + ", cameraYaw: " + cameraYaw + ", cameraPitch: " + cameraPitch + ", cameraZoom: " + cameraZoom);
-			},
+			},*/
 			hoverGrab: false,
 			autoLoad: true,
 			showControlsOnHover: false,
@@ -150,16 +150,16 @@ angular.module('starter')
 					//hotSpots definition
 					hotSpots: [
 						{
-							yaw: 51.64,
-							pitch: -11.70,
+							yaw: 94.28,
+							pitch: -19.18,
 							popoverShow: true,
 							popoverPlacement: "top",
 							popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
 							popoverSelector: "#popover1", //this select the element you want to show
 						},
 						{
-							yaw: 300.52,
-							pitch: -18.81,
+							yaw: 297.52,
+							pitch: -12.81,
 							popoverShow: true,
 							popoverPlacement: "top",
 							popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
@@ -213,8 +213,8 @@ angular.module('starter')
 					pitch: -13.21,
 					hotSpots: [
 						{
-							yaw: 39.04,
-							pitch: -13.69,
+							yaw: 60.04,
+							pitch: -25.69,
 							popoverShow: true,
               popoverHtml: true, //this line and the next are used to display HTML elements, such as videos or images
 							popoverSelector: "#popover4", //this select the element you want to show
