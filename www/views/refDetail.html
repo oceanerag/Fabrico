@@ -26,11 +26,9 @@
       <div id="MilieuContent">
 
 
-          <div class="contener_slideshow">
-            <div class="contener_slide">
-              <div class="slid_1"><img class="slid_1_img" ng-src="{{reference.imgUrl}}" ng-show="reference.imgUrl" alt="Image"> </div>
-              <div class="slid_2"><img class="slid_2_img" ng-src="{{reference.imgUrl}}" ng-show="reference.imgUrl" alt="Image" > </div>
-              <div class="slid_3"><img class="slid_3_img" ng-src="{{reference.imgUrl}}" ng-show="reference.imgUrl" alt="Image" > </div>
+          <div id="ref-slides">
+            <div ng-repeat="image in reference.imgUrl track by $index" class="ref-slide" ng-class="($index==currentSlide) ? 'ref-slide--showing' : ''">
+              <img class="ref-slide-img" ng-src="{{image}}" alt="Image">
             </div>
           </div>
 
