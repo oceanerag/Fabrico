@@ -69,3 +69,15 @@
 	bottom:10%;
 	left:41%;
 }
+/*Media Queries*/
+@media screen and (max-device-width: 740px)
+and (orientation: landscape){
+	.offer-header h1{
+		font-size:2em;
+	}
+	.imageconteneur{
+	width: 85%;
+	margin-left: 7%;
+}
+
+}
