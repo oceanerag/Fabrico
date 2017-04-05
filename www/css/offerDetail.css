@@ -27,10 +27,16 @@
   color: #275466;
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 1%;
 }
 
 .themeTitle{
   margin-left: 0%;
+  font-family: 'HelveticaNeueLT', serif;
+  color: #275466;
+  font-size: 3em;
+  padding-top: 1%;
+  padding-left: 1%;
 }
 .divImage{
 height: 110%;
