@@ -174,7 +174,7 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     selected : false,
     logoUrl : 'img/references/seb/seb_logo.png',
     imgUrl : 'img/references/seb/seb.png',
-    subtitle : "Accompagner le client dans la remise en questin de l'ergonomie de son outil",
+    subtitle : "Accompagner le client dans la remise en question de l'ergonomie de son outil",
     bulletPoints: [
       "Wireframes des écrans et fonctionnalités clés à challenger",
       "Réflexion autour de la nouvelle expérience utilisateur",
