@@ -156,6 +156,7 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     logoUrl : 'img/references/enedis/enedis_logo.png',
     imgUrl : [
       'img/references/enedis/enedis.png',
+      'img/references/enedis/enedis_logo.png'
     ],
     subtitle : "Comment assurer la sécurité du technicien isolé ? ",
     bulletPoints :[
