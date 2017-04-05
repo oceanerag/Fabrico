@@ -198,7 +198,7 @@
 		// Properties & methods (is shared for all instances)
 		//=============================================
 		defaults: {
-			theme: "ipnrm-theme-default", // CSS styles for controls, change it to match your own theme
+			theme: "ipnrm-theme-modern", // CSS styles for controls, change it to match your own theme
 			imagePreview: null, // specifies a URL for a preview image to display before the panorama is loaded
 			autoLoad: false, // when set to true, the panorama will automatically load, when false, the user needs to click on the load button to load the panorama
 			autoRotate: false, // setting this parameter causes the panorama to automatically rotate when loaded
