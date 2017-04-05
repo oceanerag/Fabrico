@@ -22,3 +22,10 @@
  background-color: #f0f0f0;
 
 }
+/*Media Query*/
+@media screen and (max-device-width: 740px)
+and (orientation: landscape){
+  .agenda {
+    font-size: 2em;
+  }
+}

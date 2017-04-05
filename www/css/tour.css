@@ -32,3 +32,25 @@
   bottom : 20%;
   right : 15%;
 }
+/*Media Query*/
+@media screen and (max-device-width: 740px)
+and (orientation: landscape){
+  .virtualTour-tab-span{
+    font-size:1em;
+  }
+  #presentation-spanVT {
+  top : 15%;
+  left : 5%;
+}
+#references-spanVT{
+  top : 15%;
+  right : 10%;
+}
+#offers-spanVT{
+  bottom : 15%;
+  left : 10%;
+}
+#agenda-spanVT{
+  bottom : 20%;
+  right : 15%;
+}

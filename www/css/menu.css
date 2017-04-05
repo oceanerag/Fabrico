@@ -209,12 +209,11 @@
   .cut-corner-top-right:before {
     transform: skew(62deg);
   }
-@media all and (max-device-width:100px) {
-  .menu-tab-span{
-    font-size: 1.8em;
-    }
-#virtual-tour-span{
-    font-size: 4em;
-    }
-  }
+}
+@media screen and (max-device-width: 740px)
+and (orientation: landscape){
+   .menu-tab-span{
+  color : #275466;
+  font-size: 2.1em;
+  position: absolute;
 }

@@ -197,3 +197,20 @@
         .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
     }
 }
+
+/*Media Query*/
+@media screen and (max-device-width: 740px)
+and (orientation: landscape){
+#reference-details {
+	display:none;
+}
+#refList{
+	display:none;
+}
+.reference-header h1{
+	font-size:2em;
+}
+#reference-name{
+	font-size:2em;
+}
+}
