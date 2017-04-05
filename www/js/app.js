@@ -104,6 +104,7 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     url:'/refDetail',
     templateUrl:'views/refDetail.html',
     cache : false,
+    controller : 'refDetailCtrl'
   })
 
   .state('offersList', {
@@ -153,7 +154,10 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     customer : 'ENEDIS',
     selected : false,
     logoUrl : 'img/references/enedis/enedis_logo.png',
-    imgUrl : 'img/references/enedis/enedis.png',
+    imgUrl : [
+      'img/references/enedis/enedis.png',
+      'img/references/enedis/enedis_logo.png'
+    ],
     subtitle : "Comment assurer la sécurité du technicien isolé ? ",
     bulletPoints :[
      " Enjeu : Développer en un temps record un prototype",
@@ -173,7 +177,9 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     customer: 'Groupe SEB',
     selected : false,
     logoUrl : 'img/references/seb/seb_logo.png',
-    imgUrl : 'img/references/seb/seb.png',
+    imgUrl : [
+      'img/references/seb/seb.png',
+    ],
     subtitle : "Accompagner le client dans la remise en question de l'ergonomie de son outil",
     bulletPoints: [
       "Wireframes des écrans et fonctionnalités clés à challenger",
@@ -191,7 +197,9 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     customer : 'Séché Environnement',
     selected : false,
     logoUrl : 'img/references/secheenvironnement/secheenvironnement_logo.png',
-    imgUrl : 'img/references/secheenvironnement/secheenvironnement.png',
+    imgUrl : [
+      'img/references/secheenvironnement/secheenvironnement.png',
+    ],
     subtitle: "Comment vérifier rapidement l'intégration d'une nouvelle solution dans un SI existant",
     bulletPoints : [
       "Concept: Développer rapidement un POC pour prouver la faisabilité",
@@ -205,7 +213,9 @@ angular.module('starter', ['ionic', 'ngCordova','ionic-native-transitions','ui.c
     customer : 'Somfy',
     selected : false,
     logoUrl : 'img/references/somfy/somfy_logo.png',
-    imgUrl : 'img/references/somfy/Somfy.png',
+    imgUrl : [
+      'img/references/somfy/Somfy.png',
+    ],
     video : 'video/VideoPresentationCapgemini.720p.mp4',
     subtitle : 'Concrétiser la roadmap réalisée en parrallèle et accélérer sa réalisation ',
     bulletPoints : [
